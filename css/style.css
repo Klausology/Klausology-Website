@@ -345,7 +345,7 @@ a:hover, a:active, a:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
         align-items: center;
-  height: 150vh;
+  height: 90vh;
   text-align: center;
 }
 
