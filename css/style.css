@@ -621,12 +621,12 @@ footer {
 
   #gallery small
   {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   figcaption
   {
-    font-size: 9px;
+    font-size: 5px;
   }
 
 }
@@ -651,15 +651,16 @@ footer {
   }
 
 
-  #gallery small
+ #gallery small
   {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   figcaption
   {
-    font-size: 9px;
+    font-size: 5px;
   }
+
 
 
 }
@@ -688,15 +689,16 @@ footer {
   }
 
   
-  #gallery small
+ #gallery small
   {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   figcaption
   {
-    font-size: 9px;
+    font-size: 5px;
   }
+
 
 
 }

@@ -142,4 +142,9 @@
 		width: 100%;
 		min-width: 300px;
 	}
+
+	.grid figcaption h1 {
+		font-size: 0.5rem;
+		line-height: 0.5rem;
+	}
 }
