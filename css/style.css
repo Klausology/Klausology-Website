@@ -618,6 +618,17 @@ footer {
     margin-top: 32px;
   }
 
+
+  #gallery small
+  {
+    font-size: 10px;
+  }
+
+  figcaption
+  {
+    font-size: 9px;
+  }
+
 }
 
 
@@ -638,6 +649,18 @@ footer {
     top: 0;
     left: 0;
   }
+
+
+  #gallery small
+  {
+    font-size: 10px;
+  }
+
+  figcaption
+  {
+    font-size: 9px;
+  }
+
 
 }
 
@@ -663,6 +686,18 @@ footer {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+
+  
+  #gallery small
+  {
+    font-size: 10px;
+  }
+
+  figcaption
+  {
+    font-size: 9px;
+  }
+
 
 }
 
