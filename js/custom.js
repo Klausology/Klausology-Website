@@ -114,6 +114,33 @@ new Vivus('Layer_2', {
 
 // );
        
+var letterPop = {};
+letterPop.opacityIn = [0,1];
+letterPop.scaleIn = [0.2, 1];
+letterPop.scaleOut = 1.5;
+letterPop.durationIn = 1000;
+letterPop.durationOut = 800;
+letterPop.delay = 800;
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.letterPop #downloadNow',
+    opacity: letterPop.opacityIn,
+    scale: letterPop.scaleIn,
+    duration: letterPop.durationIn
+  }).add({
+    targets: '.letterPop #downloadNow',
+    opacity: 0,
+    scale: letterPop.scaleOut,
+    duration: letterPop.durationOut,
+    easing: "easeInExpo",
+    delay: letterPop.delay
+  }).add({
+    targets: '.letterPop',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
 
 // new Vivus('preloader-logo', {
 
