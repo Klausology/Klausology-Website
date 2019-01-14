@@ -24,9 +24,15 @@ $(window).load(function(){
           $('#image').addClass('top-of-page');
           $('#comingSoonImage').addClass('top-of-page');
           $('#gameyMonth2').addClass('top-of-page');
+           $('.circleBoss').addClass('top-of-page');
+     $('.letterPop').addClass('top-of-page');
 
 
 
+var element = document.getElementById("addTitle");
+var newElement = '<span id = "addedTitle">KLAUSOLOGY</span>';
+
+element.insertAdjacentHTML( 'afterbegin', newElement);
            /* testimonials Slider Active
     =============================*/
     $('.screen-slider').owlCarousel({
@@ -117,7 +123,7 @@ new Vivus('Layer_2', {
 var letterPop = {};
 letterPop.opacityIn = [0,1];
 letterPop.scaleIn = [0.2, 1];
-letterPop.scaleOut = 1.5;
+letterPop.scaleOut = 1.3;
 letterPop.durationIn = 1000;
 letterPop.durationOut = 800;
 letterPop.delay = 800;
@@ -266,6 +272,33 @@ $(window).on("scroll", function() {
                             $('#image').addClass('top-of-page');
                                  $('#comingSoonImage').addClass('top-of-page');
           $('#gameyMonth2').addClass('top-of-page');
+             $('.circleBoss').addClass('top-of-page');
+                $('.letterPop').addClass('top-of-page');
+
+
+
+var element = document.getElementById("addTitle");
+var newElement = '<span id = "addedTitle">KLAUSOLOGY</span>';
+
+element.insertAdjacentHTML( 'afterbegin', newElement);
+           /* testimonials Slider Active
+    =============================*/
+    $('.screen-slider').owlCarousel({
+        loop: true,
+        margin: 0,
+        responsiveClass: true,
+        navigation: true,
+        autoPlay: true,
+        autoPlayTimeout: 4000,
+        smartSpeed: 1000,
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        items: 1,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        center: true,
+    });
+
+
 
 
 
@@ -278,6 +311,12 @@ $(window).on("scroll", function() {
                          $('#image').removeClass('top-of-page');
                               $('#comingSoonImage').removeClass('top-of-page');
           $('#gameyMonth2').removeClass('top-of-page');
+    $('.circleBoss').removeClass('top-of-page');
+                $('.letterPop').removeClass('top-of-page');
+
+var elem = document.getElementById("addedTitle");
+elem.remove();
+
 
 
 
