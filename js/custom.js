@@ -26,19 +26,68 @@ $(window).load(function(){
           $('#gameyMonth2').addClass('top-of-page');
            $('.circleBoss').addClass('top-of-page');
           $('.letterPop').addClass('top-of-page');
+          $('.circleBoi').addClass('top-of-page');
+          $('.spinny').addClass('top-of-page');
+
+span = document.getElementById("middleName");
+// var newline = "\r\n";
+// span.style.whiteSpace = "pre";
+// span.style.fontWeight = "900";
+// span.style.transform = "translateY(-15%)";
+
+ 
+  
+  // Fade in 
+  setTimeout(function(){ 
+  
+// if ('textContent' in span) {
+//     span.textContent = 'Download' + newline + 'Now!';
+// } else {
+//     span.innerText = 'Download' + newline + 'Now!';
+// }
+
+   
+      span.style.opacity = 1;
+  },50);
 
 
 
-        if(document.getElementById("addedTitle") === null)
-        {
-                var element = document.getElementById("addTitle");
-                var newElement = '<span id = "addedTitle">KLAUSOLOGY</span>';
+span2 = document.getElementById("magic");
 
-                element.insertAdjacentHTML( 'afterbegin', newElement);
-             
+  setTimeout(function(){ 
 
-          
-        }
+      span2.style.opacity = 0;
+      span2.style.transform.translateY = "0%";
+   
+  },50);
+  
+// span = document.getElementById("middleName");
+// span.style.fontWeight = "900";
+
+//   span.style.opacity = 0;
+  
+//   // Fade in 
+//   setTimeout(function(){ 
+//      if ('textContent' in span) {
+//     span.textContent = 'KLAUSOLOGY';
+// } else {
+//     span.innerText = 'KLAUSOLOGY';
+// }
+   
+//       span.style.opacity = 1;
+//   },100);
+  
+
+
+
+
+     // if(document.getElementById("circleGurl") != null)
+        // {
+        //         var element = document.getElementById("circleGurl");
+        //         var newElement = '<div id = "spinny"></div>';
+
+        //         element.insertAdjacentHTML( 'beforebegin', newElement);
+        // }
 
 
 
@@ -125,35 +174,8 @@ new Vivus('Layer_2', {
 // }
 
 // );
+// Wrap every letter in a span
 
-
-var letterPop = {};
-letterPop.opacityIn = [0,1];
-letterPop.scaleIn = [0.2, 1];
-letterPop.scaleOut = 1.3;
-letterPop.durationIn = 1200;
-letterPop.durationOut = 800;
-letterPop.delay = 800;
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.letterPop #downloadNow',
-    opacity: letterPop.opacityIn,
-    scale: letterPop.scaleIn,
-    duration: letterPop.durationIn
-  }).add({
-    targets: '.letterPop #downloadNow',
-    opacity: 0,
-    scale: letterPop.scaleOut,
-    duration: letterPop.durationOut,
-    easing: "easeInExpo",
-    delay: letterPop.delay
-  }).add({
-    targets: '.letterPop',
-    opacity: 0,
-    duration: 500,
-    delay: 500
-  });
 
 // new Vivus('preloader-logo', {
 
@@ -280,20 +302,98 @@ $(window).on("scroll", function() {
 
 
 
-
-
-
-
-
     var scrollPos = $(window).scrollTop();
     if (scrollPos <= 0) 
     {
+     
+span2 = document.getElementById("magic");
+
+  setTimeout(function(){ 
+      span2.style.transform.translateY = "0%";
+   
+   
+      span2.style.opacity = 0;
+  },50);
+  
+
+
+
         $('.navbar-default').addClass('top-of-page');
         $('.navbar-default .navbar-brand').addClass('top-of-page');
         $('.navbar-default .navbar-nav').addClass('top-of-page');
         $('#image').addClass('top-of-page');
         $('#comingSoonImage').addClass('top-of-page');
         $('#gameyMonth2').addClass('top-of-page');
+        $('.circleBoi').addClass('top-of-page');
+          $('.spinny').addClass('top-of-page');
+span = document.getElementById("middleName");
+// var newline = "\r\n";
+// span.style.whiteSpace = "pre";
+// span.style.fontWeight = "900";
+// span.style.transform = "translateY(-15%)";
+
+  
+  // Fade in 
+  setTimeout(function(){ 
+  
+// if ('textContent' in span) {
+//     span.textContent = 'Download' + newline + 'Now!';
+// } else {
+//     span.innerText = 'Download' + newline + 'Now!';
+// }
+
+   
+      span.style.opacity = 1;
+  },50);
+  
+
+// span = document.getElementById("middleName");
+//   span.style.opacity = 0;
+// var transitionEvent = whichTransitionEvent(),
+//     item = document.querySelector('.circleBoi.top-of-page');
+
+
+    
+//    item.addEventListener(transitionEvent, transitionEndCallback);
+
+// function transitionEndCallback(event) {
+//     item.removeEventListener(transitionEvent, transitionEndCallback);
+   
+
+  
+//   // Fade in 
+//   setTimeout(function(){ 
+//      if ('textContent' in span) {
+//     span.textContent = 'KLAUSOLOGY';
+// } else {
+//     span.innerText = 'KLAUSOLOGY';
+// }
+   
+//       span.style.opacity = 1;
+//   },50);
+// }
+
+// // Function from David Walsh: http://davidwalsh.name/css-animation-callback
+// function whichTransitionEvent(){
+//     var t,
+//         el = document.createElement("fakeelement");
+
+//     var transitions = {
+//         "transition"      : "transitionend",
+//         "OTransition"     : "oTransitionEnd",
+//         "MozTransition"   : "transitionend",
+//         "WebkitTransition": "webkitTransitionEnd"
+//     }
+
+//     for (t in transitions){
+//         if (el.style[t] !== undefined){
+//             return transitions[t];
+//         }
+//     }
+// }
+
+
+
         // $('.circleBoss').addClass('top-of-page');
         // $('.letterPop').addClass('top-of-page');
 
@@ -302,6 +402,8 @@ $(window).on("scroll", function() {
     }
     else 
     {
+
+     
         $('.navbar-default').removeClass('top-of-page');
         $('.navbar-default .navbar-brand').removeClass('top-of-page');
         $('.navbar-default .navbar-nav').removeClass('top-of-page');
@@ -310,11 +412,42 @@ $(window).on("scroll", function() {
         $('#gameyMonth2').removeClass('top-of-page');
         $('.circleBoss').removeClass('top-of-page');
         $('.letterPop').removeClass('top-of-page');
+        $('.circleBoi').removeClass('top-of-page');
+          $('.spinny').removeClass('top-of-page');
 
+span = document.getElementById("middleName");
+// var newline = "\r\n";
+// span.style.whiteSpace = "pre";
+// span.style.fontWeight = "900";
+// span.style.transform = "translateY(-15%)";
+
+
+  
+  // Fade in 
+  setTimeout(function(){ 
+  
+// if ('textContent' in span) {
+//     span.textContent = 'Download' + newline + 'Now!';
+// } else {
+//     span.innerText = 'Download' + newline + 'Now!';
+// }
+
+      span.style.opacity = 0;
+  },50);
+  
+
+span2 = document.getElementById("magic");
+
+  setTimeout(function(){ 
+      span2.style.transform.translateY = "100%";
+   
+      span2.style.opacity = 1;
+  },50);
 
         }
 
     
+
 });
 
   /* Team carousel
