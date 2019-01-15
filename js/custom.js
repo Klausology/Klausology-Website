@@ -25,14 +25,23 @@ $(window).load(function(){
           $('#comingSoonImage').addClass('top-of-page');
           $('#gameyMonth2').addClass('top-of-page');
            $('.circleBoss').addClass('top-of-page');
-     $('.letterPop').addClass('top-of-page');
+          $('.letterPop').addClass('top-of-page');
 
 
 
-var element = document.getElementById("addTitle");
-var newElement = '<span id = "addedTitle">KLAUSOLOGY</span>';
+        if(document.getElementById("addedTitle") === null)
+        {
+                var element = document.getElementById("addTitle");
+                var newElement = '<span id = "addedTitle">KLAUSOLOGY</span>';
 
-element.insertAdjacentHTML( 'afterbegin', newElement);
+                element.insertAdjacentHTML( 'afterbegin', newElement);
+             
+
+          
+        }
+
+
+
            /* testimonials Slider Active
     =============================*/
     $('.screen-slider').owlCarousel({
@@ -50,9 +59,6 @@ element.insertAdjacentHTML( 'afterbegin', newElement);
         center: true,
     });
 
-
-
-//     $(function startAnimation() { 
 //     var frames = document.getElementById("animation").children;
 //     var frameCount = frames.length;
 //     var i = 0;
@@ -119,12 +125,13 @@ new Vivus('Layer_2', {
 // }
 
 // );
-       
+
+
 var letterPop = {};
 letterPop.opacityIn = [0,1];
 letterPop.scaleIn = [0.2, 1];
 letterPop.scaleOut = 1.3;
-letterPop.durationIn = 1000;
+letterPop.durationIn = 1200;
 letterPop.durationOut = 800;
 letterPop.delay = 800;
 
@@ -180,6 +187,11 @@ anime.timeline({loop: true})
 
   
 // });
+
+
+
+
+
 });
 
 $('.description1').each(function(){
@@ -263,64 +275,46 @@ $(document).ready(function() {
   
 
 $(window).on("scroll", function() {
+
+
+
+
+
+
+
+
+
+
     var scrollPos = $(window).scrollTop();
     if (scrollPos <= 0) 
     {
         $('.navbar-default').addClass('top-of-page');
-         $('.navbar-default .navbar-brand').addClass('top-of-page');
-                  $('.navbar-default .navbar-nav').addClass('top-of-page');
-                            $('#image').addClass('top-of-page');
-                                 $('#comingSoonImage').addClass('top-of-page');
-          $('#gameyMonth2').addClass('top-of-page');
-             $('.circleBoss').addClass('top-of-page');
-                $('.letterPop').addClass('top-of-page');
+        $('.navbar-default .navbar-brand').addClass('top-of-page');
+        $('.navbar-default .navbar-nav').addClass('top-of-page');
+        $('#image').addClass('top-of-page');
+        $('#comingSoonImage').addClass('top-of-page');
+        $('#gameyMonth2').addClass('top-of-page');
+        // $('.circleBoss').addClass('top-of-page');
+        // $('.letterPop').addClass('top-of-page');
 
 
-
-var element = document.getElementById("addTitle");
-var newElement = '<span id = "addedTitle">KLAUSOLOGY</span>';
-
-element.insertAdjacentHTML( 'afterbegin', newElement);
-           /* testimonials Slider Active
-    =============================*/
-    $('.screen-slider').owlCarousel({
-        loop: true,
-        margin: 0,
-        responsiveClass: true,
-        navigation: true,
-        autoPlay: true,
-        autoPlayTimeout: 4000,
-        smartSpeed: 1000,
-        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        items: 1,
-        animateIn: 'fadeIn',
-        animateOut: 'fadeOut',
-        center: true,
-    });
-
-
-
-
-
-
-    } else 
+      
+    }
+    else 
     {
         $('.navbar-default').removeClass('top-of-page');
-         $('.navbar-default .navbar-brand').removeClass('top-of-page');
-                  $('.navbar-default .navbar-nav').removeClass('top-of-page');
-                         $('#image').removeClass('top-of-page');
-                              $('#comingSoonImage').removeClass('top-of-page');
-          $('#gameyMonth2').removeClass('top-of-page');
-    $('.circleBoss').removeClass('top-of-page');
-                $('.letterPop').removeClass('top-of-page');
-
-var elem = document.getElementById("addedTitle");
-elem.remove();
+        $('.navbar-default .navbar-brand').removeClass('top-of-page');
+        $('.navbar-default .navbar-nav').removeClass('top-of-page');
+        $('#image').removeClass('top-of-page');
+        $('#comingSoonImage').removeClass('top-of-page');
+        $('#gameyMonth2').removeClass('top-of-page');
+        $('.circleBoss').removeClass('top-of-page');
+        $('.letterPop').removeClass('top-of-page');
 
 
+        }
 
-
-    }
+    
 });
 
   /* Team carousel
@@ -338,6 +332,8 @@ elem.remove();
       });
     });
     
+
+
 
     /* Back to Top
     -----------------------------------------------*/
