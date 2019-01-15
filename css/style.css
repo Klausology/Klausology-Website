@@ -809,7 +809,7 @@ background: #000;
 
 
     -webkit-animation: unsqueeze 0.7s linear;
-     animation: squeeze 0.7s linear,  spin 3s linear infinite;
+     animation: squeeze 0.7s linear,  spin 1.5s linear infinite;
   
 }
 .spinny:before {
