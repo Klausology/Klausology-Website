@@ -77,10 +77,95 @@ span2 = document.getElementById("magic");
 //       span.style.opacity = 1;
 //   },100);
   
+var element = document.getElementById('scene');
+
+//apply the parallax-effect to the scene
+var my_parallax = new Parallax(element, {
+      relativeInput: false,
+      clipRelativeInput: false, 
+      calibrateX: true,
+      calibrateY: true,
+      invertX: true,
+      invertY: true,
+      limitX: false,
+      limitY: false,
+      scalarX: 10,
+      scalarY: 10,
+      frictionX: 0.1,
+      frictionY: 0.1,
+      originX: 0.5,
+      originY: 0.5
+});
+
+//apply the debounce resize listener from https://github.com/louisremi/jquery-smartresize/blob/master/jquery.debouncedresize.js?ref=7
+$(window).on("debouncedresize", function( event ) {
+    updateParallax(); 
+});
+
+updateParallax(); 
+
+// function that updates parallax according to window width
+function updateParallax() {
+  
+  var viewport_width = $(window).width();
+  var layers = my_parallax.layers;
+      
+  for (var j = 0; j<layers.length; j++) {
+       var layer = layers.item(j);
+       var deskDepth = layer.getAttribute("data-depth-desk");
+       var mobileDepth = layer.getAttribute("data-depth-mobile");
+       
+       if(viewport_width <= 650)
+       {
+           var sceney = document.getElementById("scene");
+          var homey = document.getElementById("home");
+          var bannersusu = document.getElementById("bannersu");
+
+          if(my_parallax != null)
+          {
+             my_parallax.disable();
+          }
+         
+         
+          bannersusu.style.display = "block";
+          
+          homey.style.backgroundImage = "url('images/static-image1.png')";
+    
+          homey.style.backgroundSize = "100%";
+          homey.style.backgroundRepeat = "no-repeat";
+          sceney.style.display = "none";
+       }
+       else
+       {
+          var sceney = document.getElementById("scene");
+      
+          var bannersusu = document.getElementById("bannersu");
+                  
+         
+          bannersusu.style.display = "none";
+          
+
+          sceney.style.display = "block";
+          my_parallax.enable();
+
+       }
 
 
+       if(viewport_width < 768) {
+           if(layer.hasAttribute("data-depth-mobile")) {
+               layer.setAttribute("data-depth", mobileDepth);
+           }
+       }
+       else {
+           if(layer.hasAttribute("data-depth-desk")) {
+               layer.setAttribute("data-depth", deskDepth);
+           }
+       }
 
 
+   }
+   my_parallax.updateLayers();
+}
      // if(document.getElementById("circleGurl") != null)
         // {
         //         var element = document.getElementById("circleGurl");

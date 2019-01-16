@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Klausology</title>
   <meta property="og:title" content="Klausology" />
   <meta property="og:locale" content="en_US">
@@ -42,6 +42,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   <link rel="stylesheet" href="css/style.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.2/vivus.js"></script>
+<script src="js/jquery.js"></script>
   <!-- Google web font  -->
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
   
@@ -142,7 +143,10 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 <section id="home">
  
-
+  			 <div id = "bannersu"   style= "transform: translateY(220%);">
+                <div id = "GP2"><a href = "https://play.google.com/store/apps/details?id=com.Klausology.VinnysOrigin&hl=en"  target="_blank"><img src="images/badge.png"></a></div>
+   				<div id = "Amazon2"><a href = "https://www.amazon.com/Klausology-Vinnys-Origin/dp/B07LBX7KBX"  target="_blank"><img src="images/badge1.png"></a></div>
+              </div>     
 
 
     <div id="scene" class="scene border fill" data-pointer-events="true">
@@ -216,16 +220,24 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
       <div data-depth="0.00"><img src="./assets/images/layer6.png"></div> -->
     </div>
   </div>
-
-  <!-- Scripts -->
   <script src="js/parallax.js"></script>
+  <!-- Scripts -->
+<!--   <script src="js/parallax.js"></script>
 <script>
 
   // Pretty simple huh?
-  var scene = document.getElementById('scene');
-  var parallax = new Parallax(scene);
+  	var scene = document.getElementById('scene');
+  	var parallax = new Parallax(scene);
+  if ($(window).width() > 649)
+  {
+ 	parallax.enable();
+  }
+ else
+ {
+ 	parallax.destroy();
 
-  </script>
+ }
+  </script> -->
 <!-- stats - count particles -->
 <!--   <div class="overlay"></div> -->
 
@@ -323,21 +335,18 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
     	 <h1>GAMES</h1>
           <p>All games available at GooglePlay store & select games available at Amazon App Store</p>
 
-      <div class="col-md-offset-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+<!--       <div class="col-md-offset-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
         <div class="section-title">
-         <!-- <h1>GAMES</h1>
-          <p>All games available at GooglePlay store</p> -->
             <div><a href="https://play.google.com/store/apps/dev?id=8858249726005055759" class="smoothScroll"><img src="images/badge.png" alt="image 1"></a></div>
         </div>
       </div>
 
  	   <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
         <div class="section-title">
-          <!--  <h1>GAMES</h1>
-          <p>Select games available at Amazon App Store</p> -->
+      
             <div><a href="http://www.amazon.com/gp/mas/dl/android?p=com.Klausology.VinnysOriginA" class="smoothScroll"><img src="images/badge1.png" alt="image 2"></a></div>
         </div>
-      </div>
+      </div> -->
 
       <ul class="grid cs-style-4">
 
@@ -491,7 +500,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 <script src="js/particles.js"></script>
 
-<script src="js/jquery.js"></script>
+
 <script src="js/bootstrap.min.js"></script>
 <!-- <script src="js/vegas.min.js"></script> -->
 <script src="js/modernizr.custom.js"></script>
