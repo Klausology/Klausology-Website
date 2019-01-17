@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Klausology</title>
   <meta property="og:title" content="Klausology" />
@@ -33,6 +34,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/component.css">
+
   <!--   <link rel="stylesheet" href="css/themify-icons.css"> -->
     <link rel="stylesheet" href="css/magnific-popup.css">
 <!-- 
@@ -43,6 +45,10 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.2/vivus.js"></script>
 <script src="js/jquery.js"></script>
+
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
   <!-- Google web font  -->
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
   
@@ -138,7 +144,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   </div>
 
    
-
+<div id = "test">
 <!-- Home section -->
 
 <section id="home">
@@ -149,190 +155,76 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
               </div>     
 
 
-    <div id="scene" class="scene border fill" data-pointer-events="true">
+				    <div id="scene" class="scene border fill" data-pointer-events="true">
 
-      <div data-depth="1.0"><img src="./assets/images/layer1p52.png"></div>
-      <div data-depth="0.80"><img src="./assets/images/layer2p52.png"></div>
-                
-           <div data-depth="0.4"><img src="./assets/images/layer8p5.png"></div>
-               <div data-depth="0.4" class = "vinnyDesu">
-                <div id = "vinnyHead"><img src="images/vinny_head_2.png" id="image1" /></div>
-                <div id = "vinnyBody"><img src="images/vinny_body.png" id="image2" /></div>
-              </div>       
+				      <div data-depth="1.0"><img src="./assets/images/layer1p52.png"></div>
+				      <div data-depth="0.80"><img src="./assets/images/layer2p52.png"></div>
+				                
+				           <div data-depth="0.4"><img src="./assets/images/layer8p5.png"></div>
+				               <div data-depth="0.4" class = "vinnyDesu">
+				                <div id = "vinnyHead"><img src="images/vinny_head_2.png" id="image1" /></div>
+				                <div id = "vinnyBody"><img src="images/vinny_body.png" id="image2" /></div>
+				              </div>       
 
-            <div data-depth ="0.2" data-position-x="400" id = "logo">
-              <h2 class = "title">
-              KLAUSOLOGY</h2> 
-                    <h2 class = "description1">The best one &ndash; person mobile app empire</h2>
-                  </div>
-
-
-              <div id = "my-div" data-depth="0.2">
-
-<svg id="canvas">
-<?xml version="1.0" encoding="utf-8"?>
-
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 562.03 540.93" style="enable-background:new 0 0 562.03 540.93;" xml:space="preserve">
-<style type="text/css">
-  .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
-</style>
-<path class="st0" d="M272.69,325.23l30.6-44.05L251.3,250l0.43-38.23l96.6,63.07l-44,64.25L272.69,325.23z"/>
-<path class="st0" d="M408.94,345.04l-0.83-21.96l22.68,12.95l0.32,20.53l15.13,9.26l-0.32-20.53l69.91,38.85l46.2,0.3l-171.21-97.41
-  l2.27,47.87L408.94,345.04z"/>
-<path class="st0" d="M156.42,319.25L46.19,381.98L0,382.21l143.24-81.71L156.42,319.25z"/>
-<path class="st0" d="M258.74,372.49l1.24,54.12l15.28,12.88l-0.77-33.59l11.45,9.19l2.1,91.45l17.17,34.39l-2.84-144.71
-  l-21.03-18.41l3.23-22.44l-20.81-9.08L258.74,372.49z"/>
-<path class="st0" d="M255.37,28.02L262.76,0l99.11,38.22l-52.29,1.46l-33.66-13.37L289.05,47l-22.41-0.18L255.37,28.02z"/>
-<path class="st0" d="M391.44,269.67c5.71-7.26,12.19-13.3,17.28-42.24c5.29-30.05-4.04-64.26-23.04-90.24
-  c-17.6-24.06-47.62-42.76-71.04-48c-50.09-11.21-79.34-2.8-107.52,17.28c-26.86,19.13-49.89,50.92-53.76,78.72
-  c-7.61,54.61,15.22,94.22,40.32,119.04c22.99,22.74,47.66,28.85,57.6,34.56l-5.76,24.96c-20.76-5.85-47.03-17.22-71.04-40.32
-  c-12.14-11.68-25.43-26.79-33.59-44.87c-11.58-25.65-19.79-48.45-12.49-97.21c7.96-53.15,47.12-90.09,82.56-109.44
-  c29.11-15.9,71.01-19.02,101.76-13.44c27.44,4.98,60.78,22.77,82.56,44.16c33.74,33.15,47.54,80.32,42.24,119.04
-  c-4.58,33.46-16.88,55.86-21.94,62.8L391.44,269.67z"/>
-<path class="st0" d="M360.72,189.03c-3.12-24.16-20.68-49.42-38.4-57.6c-18.35-8.47-43.24-12.21-63.36-5.76
-  c-23.26,7.45-38.4,21.12-38.4,21.12l136.32,82.56C356.88,229.35,363.2,208.19,360.72,189.03z"/>
-</svg>
-
-</div>
-
-<div class="wrapper" data-depth="0.3">
-   <div id = "GP"><a href = "https://play.google.com/store/apps/details?id=com.Klausology.VinnysOrigin&hl=en"  target="_blank"><img src="images/badge.png"></a></div>
-   <div id = "Amazon"><a href = "https://www.amazon.com/Klausology-Vinnys-Origin/dp/B07LBX7KBX"  target="_blank"><img src="images/badge1.png"></a></div>
- </div>
+				            <div data-depth ="0.2" data-position-x="400" id = "logo">
+				              <h2 class = "title">
+				              KLAUSOLOGY</h2> 
+				                    <h2 class = "description1">The best one &ndash; person mobile app empire</h2>
+				                  </div>
 
 
+				              <div id = "my-div" data-depth="0.2">
 
-<!-- 
-             <script>
-  new Vivus('canvas', {duration: 300}, callback);
-</script> -->
-                 
-                    <!--   <div id="animation" data-depth="0.4"><img src="./assets/images/layer6P53.png">
-                        <img src="./assets/images/layer6P52.png"></div> -->
+				<svg id="canvas">
+				<?xml version="1.0" encoding="utf-8"?>
 
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				   viewBox="0 0 562.03 540.93" style="enable-background:new 0 0 562.03 540.93;" xml:space="preserve">
+				<style type="text/css">
+				  .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+				</style>
+				<path class="st0" d="M272.69,325.23l30.6-44.05L251.3,250l0.43-38.23l96.6,63.07l-44,64.25L272.69,325.23z"/>
+				<path class="st0" d="M408.94,345.04l-0.83-21.96l22.68,12.95l0.32,20.53l15.13,9.26l-0.32-20.53l69.91,38.85l46.2,0.3l-171.21-97.41
+				  l2.27,47.87L408.94,345.04z"/>
+				<path class="st0" d="M156.42,319.25L46.19,381.98L0,382.21l143.24-81.71L156.42,319.25z"/>
+				<path class="st0" d="M258.74,372.49l1.24,54.12l15.28,12.88l-0.77-33.59l11.45,9.19l2.1,91.45l17.17,34.39l-2.84-144.71
+				  l-21.03-18.41l3.23-22.44l-20.81-9.08L258.74,372.49z"/>
+				<path class="st0" d="M255.37,28.02L262.76,0l99.11,38.22l-52.29,1.46l-33.66-13.37L289.05,47l-22.41-0.18L255.37,28.02z"/>
+				<path class="st0" d="M391.44,269.67c5.71-7.26,12.19-13.3,17.28-42.24c5.29-30.05-4.04-64.26-23.04-90.24
+				  c-17.6-24.06-47.62-42.76-71.04-48c-50.09-11.21-79.34-2.8-107.52,17.28c-26.86,19.13-49.89,50.92-53.76,78.72
+				  c-7.61,54.61,15.22,94.22,40.32,119.04c22.99,22.74,47.66,28.85,57.6,34.56l-5.76,24.96c-20.76-5.85-47.03-17.22-71.04-40.32
+				  c-12.14-11.68-25.43-26.79-33.59-44.87c-11.58-25.65-19.79-48.45-12.49-97.21c7.96-53.15,47.12-90.09,82.56-109.44
+				  c29.11-15.9,71.01-19.02,101.76-13.44c27.44,4.98,60.78,22.77,82.56,44.16c33.74,33.15,47.54,80.32,42.24,119.04
+				  c-4.58,33.46-16.88,55.86-21.94,62.8L391.44,269.67z"/>
+				<path class="st0" d="M360.72,189.03c-3.12-24.16-20.68-49.42-38.4-57.6c-18.35-8.47-43.24-12.21-63.36-5.76
+				  c-23.26,7.45-38.4,21.12-38.4,21.12l136.32,82.56C356.88,229.35,363.2,208.19,360.72,189.03z"/>
+				</svg>
 
-  <!--           <div data-depth="2"><img src="./assets/images/layer4p5.png"></div>
- -->
-<!--       <div data-depth="0.60"><img src="./assets/images/layer3.png"></div>
-      <div data-depth="0.40"><img src="./assets/images/layer4.png"></div>
-      <div data-depth="0.20"><img src="./assets/images/layer5.png"></div>
-      <div data-depth="0.00"><img src="./assets/images/layer6.png"></div> -->
-    </div>
-  </div>
-  <script src="js/parallax.js"></script>
-  <!-- Scripts -->
-<!--   <script src="js/parallax.js"></script>
-<script>
+				</div>
 
-  // Pretty simple huh?
-  	var scene = document.getElementById('scene');
-  	var parallax = new Parallax(scene);
-  if ($(window).width() > 649)
-  {
- 	parallax.enable();
-  }
- else
- {
- 	parallax.destroy();
-
- }
-  </script> -->
-<!-- stats - count particles -->
-<!--   <div class="overlay"></div> -->
+				<div class="wrapper" data-depth="0.3">
+				   <div id = "GP"><a href = "https://play.google.com/store/apps/details?id=com.Klausology.VinnysOrigin&hl=en"  target="_blank"><img src="images/badge.png"></a></div>
+				   <div id = "Amazon"><a href = "https://www.amazon.com/Klausology-Vinnys-Origin/dp/B07LBX7KBX"  target="_blank"><img src="images/badge1.png"></a></div>
+				 </div>
 
 
-<!--  <div class="container">
-
-
-
-
-
-    <div class="row">
-
-      <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-
-          <div class="col-xs-12 col-md-8 header-text">
-                    <h6>Conceptualization of Unilogy</h6>
-                    <p>The best one-person mobile app company</p>
-                    <p></p>
-                    <a href="#" class="button white">Watch video</a>
-                </div>
-         <h1 class="wow fadeInUp" data-wow-delay="0.6s">KLAUSOLOGY</h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p class="wow fadeInUp" data-wow-delay="0.9s">Official Klausology Website</p>
-<p class="wow fadeInUp" data-wow-delay="1.2s">Conceptualization of Unilogy - The best one-person gaming empire.</p> 
-      </div>
-      <div class="hidden-xs hidden-sm col-md-6 col-sm-6 text-right">
-                    <div class="screen-box screen-slider">
-                        <div class="item">
-                            <img src="images/screen-1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-4.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-5.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-    </div> -->
-<!-- 
-      <div class="row v-center">
-                <div class="col-xs-12 col-md-7 header-text" align = "left">
-                    <h2>It’s all about Promoting your Business</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ex inventore vel error quibusdam animi fugiat, doloribus dolores consectetur nulla deleniti sint blanditiis quod debitis quis vitae officiis tempora numquam.</p>
-          
-                </div>
-                <div class="hidden-xs hidden-sm col-md-5 text-right">
-                    <div class="screen-box screen-slider">
-                        <div class="item">
-                            <img src="images/screen-1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-4.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-5.jpg" alt="">
-                        </div>
-                         <div class="item">
-                            <img src="images/screen-6.jpg" alt="">
-                        </div>
-                         <div class="item">
-                            <img src="images/screen-7.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-  </div> -->
+				    </div>
+				  </div>
+				  <script src="js/parallax.js"></script>
+  
 </section>
 
 
 <!-- Gallery section -->
 
-<section id="gallery">
+<section id="apps">
   <div class="container">
 
 
 
     <div class="row">
 
-    	 <h1>GAMES</h1>
+    	 <h1>APPS</h1>
           <p>All games available at GooglePlay store & select games available at Amazon App Store</p>
 
 <!--       <div class="col-md-offset-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -459,6 +351,371 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   </div>
 </section>
 
+<section id="gallery">
+  <div class="container">
+
+
+ <div class="row">
+
+    	 <h1>GALLERY</h1>
+          <p>All games available at GooglePlay store & select games available at Amazon App Store</p>
+
+
+      <ul class="grid cs-style-4">
+
+      	 <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/singlish/"><img src="images/gallery-img0.jpg" alt="image 0"></a></div>
+            <figcaption>
+              <h1>Singlish Sticker Pack</h1>
+              <small>Singlish sticker pack available for WhatsApp and Telegram!</small>
+              <a href="http://klausology.com/singlish/"" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+        </li>
+
+
+
+
+        <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/origin/"><img src="images/gallery-img1.jpg" alt="image 1"></a></div>
+            <figcaption>
+              <h1>Vinny's Origin</h1>
+              <small>A game set in cosmic darkness. Solve puzzles and find your way through the light to discover your origins</small>
+              <a href="http://klausology.com/origin/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+        </li>
+
+	  <li class="col-md-6 col-sm-6">
+	          <figure>
+	            <div><a href="http://klausology.com/glidy/"><img src="images/gallery-img2.jpg" alt="image 2"></a></div>
+	            <figcaption>
+	              <h1>Glidy Vinny</h1>
+	              <small>-Vinny Game Series-</small>
+	              <br>
+	              <small>Glide and defeat bosses</small>
+	                <a href="http://klausology.com/glidy/" target="_self">Read More</a>
+	            </figcaption>
+	          </figure>
+	  </li>
+      
+      <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><a href="http://klausology.com/jumpy/"><img src="images/gallery-img3.jpg" alt="image 3"></a></div>
+            <figcaption>
+              <h1>Jumpy Vinny</h1>
+              <small>-Vinny Game Series-</small>
+	          <br>
+	          <small>Jump! Jump! Jump!</small>
+             <a href="http://klausology.com/jumpy/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+
+      <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><a href="http://klausology.com/launchy/"><img src="images/gallery-img4.jpg" alt="image 4"></a></div>
+            <figcaption>
+              <h1>Launchy Vinny</h1>
+              <small>-Vinny Game Series-</small>
+	          <br>
+	          <small>Launch Vinny to great heights through obstacles</small>
+            <a href="http://klausology.com/launchy/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+
+      <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><a href="http://klausology.com/spiny/"><img src="images/gallery-img5.jpg" alt="image 5"></a></div>
+            <figcaption>
+              <h1>Spiny Vinny</h1>
+               <small>-Vinny Game Series-</small>
+	          <br>
+	          <small>Spin to the cosmos</small>
+              <a href="http://klausology.com/spiny/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+      <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/baby/"><img src="images/gallery-img6.jpg" alt="image 6"></a></div>
+            <figcaption>
+              <h1>Baby Hero</h1>
+              <small>Monsters have invaded our planet! It is up to your baby hero to save the earth. Will you be the one to vanquish all monsters and bring peace to earth?</small>
+              <a href="http://klausology.com/baby/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+      <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/choice/"><img src="images/gallery-img7.jpg" alt="image 7"></a></div>
+            <figcaption>
+              <h1>A Better Choice</h1>
+                <small>** All proceeds go to Ellen DeGeneres WildLife Fund **</small>
+	          <br>
+	          <small>Ready to be a better person? Make the better choice today!</small>
+              <a href="http://klausology.com/choice/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<section id="gameOfMonth">
+  <div class="container">
+
+
+
+   <div class="row">
+
+    	 <h1>GAMES OF MONTH</h1>
+          <p>All games available at GooglePlay store & select games available at Amazon App Store</p>
+
+
+      <ul class="grid cs-style-4">
+
+      	 <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/singlish/"><img src="images/gallery-img0.jpg" alt="image 0"></a></div>
+            <figcaption>
+              <h1>Singlish Sticker Pack</h1>
+              <small>Singlish sticker pack available for WhatsApp and Telegram!</small>
+              <a href="http://klausology.com/singlish/"" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+        </li>
+
+
+
+
+        <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/origin/"><img src="images/gallery-img1.jpg" alt="image 1"></a></div>
+            <figcaption>
+              <h1>Vinny's Origin</h1>
+              <small>A game set in cosmic darkness. Solve puzzles and find your way through the light to discover your origins</small>
+              <a href="http://klausology.com/origin/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+        </li>
+
+	  <li class="col-md-6 col-sm-6">
+	          <figure>
+	            <div><a href="http://klausology.com/glidy/"><img src="images/gallery-img2.jpg" alt="image 2"></a></div>
+	            <figcaption>
+	              <h1>Glidy Vinny</h1>
+	              <small>-Vinny Game Series-</small>
+	              <br>
+	              <small>Glide and defeat bosses</small>
+	                <a href="http://klausology.com/glidy/" target="_self">Read More</a>
+	            </figcaption>
+	          </figure>
+	  </li>
+      
+      <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><a href="http://klausology.com/jumpy/"><img src="images/gallery-img3.jpg" alt="image 3"></a></div>
+            <figcaption>
+              <h1>Jumpy Vinny</h1>
+              <small>-Vinny Game Series-</small>
+	          <br>
+	          <small>Jump! Jump! Jump!</small>
+             <a href="http://klausology.com/jumpy/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+
+      <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><a href="http://klausology.com/launchy/"><img src="images/gallery-img4.jpg" alt="image 4"></a></div>
+            <figcaption>
+              <h1>Launchy Vinny</h1>
+              <small>-Vinny Game Series-</small>
+	          <br>
+	          <small>Launch Vinny to great heights through obstacles</small>
+            <a href="http://klausology.com/launchy/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+
+      <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><a href="http://klausology.com/spiny/"><img src="images/gallery-img5.jpg" alt="image 5"></a></div>
+            <figcaption>
+              <h1>Spiny Vinny</h1>
+               <small>-Vinny Game Series-</small>
+	          <br>
+	          <small>Spin to the cosmos</small>
+              <a href="http://klausology.com/spiny/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+      <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/baby/"><img src="images/gallery-img6.jpg" alt="image 6"></a></div>
+            <figcaption>
+              <h1>Baby Hero</h1>
+              <small>Monsters have invaded our planet! It is up to your baby hero to save the earth. Will you be the one to vanquish all monsters and bring peace to earth?</small>
+              <a href="http://klausology.com/baby/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+      <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/choice/"><img src="images/gallery-img7.jpg" alt="image 7"></a></div>
+            <figcaption>
+              <h1>A Better Choice</h1>
+                <small>** All proceeds go to Ellen DeGeneres WildLife Fund **</small>
+	          <br>
+	          <small>Ready to be a better person? Make the better choice today!</small>
+              <a href="http://klausology.com/choice/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<section id="blog">
+  <div class="container">
+
+
+
+   <div class="row">
+
+    	 <h1>BLOG</h1>
+          <p>All games available at GooglePlay store & select games available at Amazon App Store</p>
+
+
+
+      <ul class="grid cs-style-4">
+
+      	 <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/singlish/"><img src="images/gallery-img0.jpg" alt="image 0"></a></div>
+            <figcaption>
+              <h1>Singlish Sticker Pack</h1>
+              <small>Singlish sticker pack available for WhatsApp and Telegram!</small>
+              <a href="http://klausology.com/singlish/"" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+        </li>
+
+
+
+
+        <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/origin/"><img src="images/gallery-img1.jpg" alt="image 1"></a></div>
+            <figcaption>
+              <h1>Vinny's Origin</h1>
+              <small>A game set in cosmic darkness. Solve puzzles and find your way through the light to discover your origins</small>
+              <a href="http://klausology.com/origin/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+        </li>
+
+	  <li class="col-md-6 col-sm-6">
+	          <figure>
+	            <div><a href="http://klausology.com/glidy/"><img src="images/gallery-img2.jpg" alt="image 2"></a></div>
+	            <figcaption>
+	              <h1>Glidy Vinny</h1>
+	              <small>-Vinny Game Series-</small>
+	              <br>
+	              <small>Glide and defeat bosses</small>
+	                <a href="http://klausology.com/glidy/" target="_self">Read More</a>
+	            </figcaption>
+	          </figure>
+	  </li>
+      
+      <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><a href="http://klausology.com/jumpy/"><img src="images/gallery-img3.jpg" alt="image 3"></a></div>
+            <figcaption>
+              <h1>Jumpy Vinny</h1>
+              <small>-Vinny Game Series-</small>
+	          <br>
+	          <small>Jump! Jump! Jump!</small>
+             <a href="http://klausology.com/jumpy/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+
+      <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><a href="http://klausology.com/launchy/"><img src="images/gallery-img4.jpg" alt="image 4"></a></div>
+            <figcaption>
+              <h1>Launchy Vinny</h1>
+              <small>-Vinny Game Series-</small>
+	          <br>
+	          <small>Launch Vinny to great heights through obstacles</small>
+            <a href="http://klausology.com/launchy/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+
+      <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><a href="http://klausology.com/spiny/"><img src="images/gallery-img5.jpg" alt="image 5"></a></div>
+            <figcaption>
+              <h1>Spiny Vinny</h1>
+               <small>-Vinny Game Series-</small>
+	          <br>
+	          <small>Spin to the cosmos</small>
+              <a href="http://klausology.com/spiny/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+      <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/baby/"><img src="images/gallery-img6.jpg" alt="image 6"></a></div>
+            <figcaption>
+              <h1>Baby Hero</h1>
+              <small>Monsters have invaded our planet! It is up to your baby hero to save the earth. Will you be the one to vanquish all monsters and bring peace to earth?</small>
+              <a href="http://klausology.com/baby/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+      <li class="col-md-12 col-sm-12">
+          <figure>
+            <div><a href="http://klausology.com/choice/"><img src="images/gallery-img7.jpg" alt="image 7"></a></div>
+            <figcaption>
+              <h1>A Better Choice</h1>
+                <small>** All proceeds go to Ellen DeGeneres WildLife Fund **</small>
+	          <br>
+	          <small>Ready to be a better person? Make the better choice today!</small>
+              <a href="http://klausology.com/choice/" target="_self">Read More</a>
+            </figcaption>
+          </figure>
+      </li>
+
+      </ul>
+
+    </div>
+  </div>
+</section>
 
 
 
@@ -492,6 +749,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 </footer>
 </section>
 
+
+</div>
 <!-- Back top -->
 <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
