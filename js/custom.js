@@ -296,7 +296,7 @@ if(is_touch_device())
           if(i >= 0 && i < a.length) {
             $('html,body').animate({
               scrollTop: a[i].offsetTop
-            }, 400, 'easeOutExpo'
+            }, 1000, 'easeInOutExpo'
             );
           }
 
@@ -342,7 +342,7 @@ else
     if(i >= 0 && i < a.length) {
       $('html,body').animate({
         scrollTop: a[i].offsetTop
-      }, 400, 'easeOutExpo'
+      }, 1000, 'easeInOutExpo'
       );
     }
 
