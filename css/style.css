@@ -7,6 +7,201 @@ http://www.templatemo.com/tm-493-snapshot
 
 
 
+#blog
+{
+  height: 1000px;
+  background-image: linear-gradient(rgb(12, 17, 17), rgb(0, 0, 0));
+}
+
+.UnderConstruction
+{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 50%;
+    width: 500px;
+    height: 500px;
+    display: block;
+    transform: scale(2, 2);
+}
+
+#text {
+    text-align: center;
+    border: 5px solid #1086e8;
+    width: 400px;
+    top: 150px;
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    margin: -200px 0 0 -310px;
+    animation: border-flicker2 2s linear infinite;
+}
+
+#boy {
+  color:#FF00E6;
+  font-family: 'Raleway', sans-serif;
+  font-size:64px;
+  letter-spacing:10px;
+  animation: text-flicker2 3s linear infinite;
+}
+
+#offset {
+  animation: letter-flicker2 2s linear infinite;
+}
+
+
+
+#boy2 {
+  color:#FF00E6;
+  font-family: 'Raleway', sans-serif;
+  font-size:24px;
+  letter-spacing:10px;
+  animation: text-flicker2 4s linear infinite;
+}
+
+#offset2 {
+  animation: letter-flicker2 4s linear infinite;
+}
+
+
+
+@keyframes text-flicker2 {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  2% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  8% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  9% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  12% {
+    opacity:0.1;
+    text-shadow: 0px 0px rgba(242, 22, 22, 1);
+  }
+  20% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  25% {
+    opacity:0.3;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  30% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  70% {
+    opacity:0.7;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  72% {
+    opacity:0.2;
+    text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  77% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  100% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+}
+
+@keyframes border-flicker2 {
+  0% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  2% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  4% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  
+  8% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  70% {
+    opacity:0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  100% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+}
+
+@keyframes letter-flicker2 {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  2% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  
+  19% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  23% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  80% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+}
+
+
 .corner-ribbon{
   width: 200px;
   background: #e43;
@@ -217,6 +412,152 @@ body {
     font-style: normal;
     font-weight: 300;
     position: relative;
+}
+
+.bridge
+{
+
+       background: url(../images/bridge1.png);
+    background-size: 2%;
+    height: 100px;
+    width: 5000px;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+
+
+}
+
+.vinnyHolder
+{
+  height: 128px;
+  width: 64px;
+
+    left: 48%;
+    bottom: 5%;
+
+    position: absolute;
+transition: left  10000ms ease-out;
+   
+}
+
+
+.vinnySprite
+{
+  height: 128px;
+  width: 64px;
+
+
+    background: 
+url('../images/vinny2sprite.png') 0px 0px;
+}
+
+.vinny2Desu{
+      left: 48%;
+    bottom: 5%;
+    width: 64px;
+    height: 128px;
+
+
+transition: left  10000ms ease-out;
+
+  position: absolute;
+ 
+}
+
+/*.vinny2Desu{
+
+      position: absolute;
+    left: 48%;
+    bottom: 5%;
+    width: 64px;
+    height: 128px;
+}
+*/
+
+#vinny2HeadDesu
+{
+      position: absolute;
+    top: -18%;
+    /* bottom: 1050%; */
+    /* margin-bottom: 20%; */
+    /* margin-top: -40%; */
+}
+
+#vinny2BodyDesu
+{
+      position: absolute;
+    /* margin-bottom: 100px; */
+    /* z-index: 1; */
+    top: 5%;
+}
+}
+
+
+
+
+#placeHolder
+{
+
+
+
+    background-image : black;
+      z-index: 0;
+
+    height: 100vh;
+}
+
+ #apps {
+ 
+    
+    height: 100vh;
+     background-image: linear-gradient(rgb(0, 0, 0), rgb(12, 17, 17));
+         z-index: 0;
+         pointer-events: auto;
+    position: relative;
+
+}
+
+ #apps:after{
+        content: "";
+ 
+  height: 300%;
+  left: -50%;
+  opacity: 1;
+  position: fixed;
+ top: -100%;
+  width: 300%;
+
+        background-size: 500%;
+      /*  position: fixed;
+        top: 0;
+        left: 0;
+        
+        width: 250%;
+        height: 250%;
+        */
+        background: url('https://anatacreative.com/codepen/noise.png');
+        /*
+          animation: noise 1s infinite;*/
+            animation: noise 8s steps(10) infinite;
+        
+        pointer-events: none;
+    }
+
+
+@keyframes noise {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
 }
 
 html,body {
@@ -470,14 +811,14 @@ a {
 }
 
 #about,
-#apps,
+
 #contact {
   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
 }
 
-#apps,
+
 #contact, footer {
   text-align: center;
 }
@@ -498,89 +839,7 @@ a {
 /*---------------------------------------
     Pre Loader Style              
 -----------------------------------------*/
-/*#Layer_1  *{
-  fill-opacity: 0;
-  transition: fill-opacity 1s;
-}
 
-#Layer_1.finished * {
-  fill: #ffffff;
-  fill-opacity: 1;
-}
-
-*/
-
-
-/*.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    background: none repeat scroll 0 0 #fff;
-}
-
-.sk-spinner-pulse {
-  width: 60px;
-  height: 60px;
-  background-color: #e44c65;
-  border-radius: 100%;
-  margin: 40px auto;
-  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
-          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
-
-@-webkit-keyframes sk-pulseScaleOut {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); 
-            opacity: 0;}
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
-
-@keyframes sk-pulseScaleOut {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } 
-
-  }*/
-
-/*  #preloader-logo 
-  {
-  
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    background: none repeat scroll 0 0 #fff;
-}
-
-#preloader-logo * {
-  fill-opacity: 0;
-  transition: fill-opacity 1s;
-}
-
-#preloader-logo.finished * {
-  fill-opacity: 1;
-}
-*/
 .lds-hourglass {
   position: fixed;
     top: 0;
@@ -660,32 +919,1670 @@ font-size: 20px;
  /*   animation: zoomie 0.04s linear infinite;*/
 }
 
+.OriginApp
+{
+      transform: rotateZ(-45deg);
+            z-index: -1;
+    position: absolute;
 
-/*@keyframes zoomie {
+    top: 1px;
+
+}
+
+.originAppImgContainer
+{
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/originApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+ 
+}
+
+.originAppImgContainer.showImg
+{
+
+    opacity:  0;
+   animation: showImage 1s 6s linear forwards;
+}
+
+
+
+@keyframes showImage{
+  0%{
+    opacity:  0;
+  }
+    100% {
+    opacity: 1;
+    }
+}
+
+.originAppImgContainer:hover
+{
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/originApp.png) no-repeat;
+   background-size: 100%;
+}
+
+.iconPacks{
+      top: 50%;
+    /* left: 50%; */
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-left: 45%;
+}
+
+
+
+
+.SpinnyApp
+{   
+    position: absolute;
+    height: 120px;
+    color: transparent;
+    width: 120px;
+
+  opacity: 0;
+       left: -10%;
+    top: -10%;
+    border-radius: 50%;
+       border: 3px solid white;
+     box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+
+}
+
+
+
+
+.SpinnyApp.animated
+{ 
+    animation: increaseLightCircle 2s 5s linear forwards, flickerCircle 4s 5s linear infinite;
+}
+
+.SpinnyApp.animation
+{   
+    opacity: 1;
+  
+    animation: flickerCircle 4s linear infinite;
+}
+
+
+.spinnyVinnyApp:hover .SpinnyApp.animation
+{
+   opacity: 1;
+   animation : none;
+   
+}
+
+
+
+.JumpyApp
+{   
+    position: absolute;
+    height: 120px;
+    color: transparent;
+    width: 120px;
+
+  opacity: 0;
+       left: -10%;
+    top: -10%;
+    border-radius: 50%;
+       border: 3px solid white;
+     box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+
+}
+
+
+
+
+.JumpyApp.animated
+{ 
+    animation: increaseLightCircle 2s 5s linear forwards, flickerCircle 5s 5s linear infinite;
+}
+
+.JumpyApp.animation
+{   
+    opacity: 1;
+  
+    animation: flickerCircle 5s linear infinite;
+}
+
+
+.jumpyVinnyApp:hover .JumpyApp.animation
+{
+   opacity: 1;
+   animation : none;
+   
+}
+
+
+
+.LaunchyApp
+{   
+    position: absolute;
+    height: 120px;
+    color: transparent;
+    width: 120px;
+
+  opacity: 0;
+       left: -10%;
+    top: -10%;
+    border-radius: 50%;
+       border: 3px solid white;
+     box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+
+}
+
+
+
+
+.LaunchyApp.animated
+{ 
+    animation: increaseLightCircle 2s 5s linear forwards, flickerCircle 6s 5s linear infinite;
+}
+
+.LaunchyApp.animation
+{   
+    opacity: 1;
+  
+    animation: flickerCircle 6s linear infinite;
+}
+
+
+.launchyVinnyApp:hover .LaunchyApp.animation
+{
+   opacity: 1;
+   animation : none;
+   
+}
+
+
+.GlidyApp
+{   
+    position: absolute;
+    height: 120px;
+    color: transparent;
+    width: 120px;
+
+  opacity: 0;
+       left: -10%;
+    top: -10%;
+    border-radius: 50%;
+       border: 3px solid white;
+     box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+
+}
+
+
+
+
+.GlidyApp.animated
+{ 
+    animation: increaseLightCircle 2s 5s linear forwards, flickerCircle 7s 5s linear infinite;
+}
+
+.GlidyApp.animation
+{   
+    opacity: 1;
+  
+    animation: flickerCircle 7s linear infinite;
+}
+
+
+.glidyVinnyApp:hover .GlidyApp.animation
+{
+   opacity: 1;
+   animation : none;
+   
+}
+
+
+
+.BabyApp
+{   
+    position: absolute;
+    height: 120px;
+    color: transparent;
+    width: 120px;
+
+  opacity: 0;
+       left: -10%;
+    top: -10%;
+    border-radius: 50%;
+       border: 3px solid white;
+     box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+
+}
+
+
+
+
+.BabyApp.animated
+{ 
+    animation: increaseLightCircle 2s 5s linear forwards, flickerCircle 8s 5s linear infinite;
+}
+
+.BabyApp.animation
+{   
+    opacity: 1;
+  
+    animation: flickerCircle 8s linear infinite;
+}
+
+
+.babyApp:hover .BabyApp.animation
+{
+   opacity: 1;
+   animation : none;
+   
+}
+
+
+
+.SinglishApp
+{   
+    position: absolute;
+    height: 120px;
+    color: transparent;
+    width: 120px;
+
+  opacity: 0;
+       left: -10%;
+    top: -10%;
+    border-radius: 50%;
+       border: 3px solid white;
+     box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+
+}
+
+
+
+
+.SinglishApp.animated
+{ 
+    animation: increaseLightCircle 2s 5s linear forwards, flickerCircle 9s 5s linear infinite;
+}
+
+.SinglishApp.animation
+{   
+    opacity: 1;
+  
+    animation: flickerCircle 9s linear infinite;
+}
+
+
+.singlishApp:hover .SinglishApp.animation
+{
+   opacity: 1;
+   animation : none;
+   
+}
+
+
+.SinglishApp
+{   
+    position: absolute;
+    height: 120px;
+    color: transparent;
+    width: 120px;
+
+  opacity: 0;
+       left: -10%;
+    top: -10%;
+    border-radius: 50%;
+       border: 3px solid white;
+     box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+
+}
+
+
+
+
+.BabyApp.animated
+{ 
+    animation: increaseLightCircle 2s 5s linear forwards, flickerCircle 3s 5s linear infinite;
+}
+
+.BabyApp.animation
+{   
+    opacity: 1;
+  
+    animation: flickerCircle 3s linear infinite;
+}
+
+
+.babyApp:hover .BabyApp.animation
+{
+   opacity: 1;
+   animation : none;
+   
+}
+.BetterApp
+{   
+    position: absolute;
+    height: 120px;
+    color: transparent;
+    width: 120px;
+
+  opacity: 0;
+       left: -10%;
+    top: -10%;
+    border-radius: 50%;
+       border: 3px solid white;
+     box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+
+}
+
+
+
+
+.BetterApp.animated
+{ 
+    animation: increaseLightCircle 2s 5s linear forwards, flickerCircle 10s 5s linear infinite;
+}
+
+.BetterApp.animation
+{   
+    opacity: 1;
+  
+    animation: flickerCircle 10s linear infinite;
+}
+
+
+.betterApp:hover .BetterApp.animation
+{
+   opacity: 1;
+   animation : none;
+   
+}
+
+
+
+
+.StickervApp
+{   
+    position: absolute;
+    height: 120px;
+    color: transparent;
+    width: 120px;
+
+  opacity: 0;
+       left: -10%;
+    top: -10%;
+    border-radius: 50%;
+       border: 3px solid white;
+     box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+
+}
+
+
+
+
+.StickervApp.animated
+{ 
+    animation: increaseLightCircle 2s 5s linear forwards, flickerCircle 11s 5s linear infinite;
+}
+
+.StickervApp.animation
+{   
+    opacity: 1;
+  
+    animation: flickerCircle 11s linear infinite;
+}
+
+
+.stickervApp:hover .StickervApp.animation
+{
+   opacity: 1;
+   animation : none;
+   
+}
+
+
+.StickervApp
+{   
+    position: absolute;
+    height: 120px;
+    color: transparent;
+    width: 120px;
+
+  opacity: 0;
+       left: -10%;
+    top: -10%;
+    border-radius: 50%;
+       border: 3px solid white;
+     box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+
+}
+
+
+
+
+
+@keyframes flickerCircle {
   0% {
-  transform:scale(0.8);
-  transform-origin: center;
+    opacity:0.1;
+     /*  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;*/
+          box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+  
   }
-  50%
-  {
-    transform:scale(1);
-  transform-origin: center;
+  2% {
+    opacity:1;
+       /* box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;*/
+        box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
   }
-  50.1%
-  {
-    transform:scale(1);
-  transform-origin: center;
-    
+  4% {
+    opacity:0.1;
+      /* box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;*/
+       box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
   }
   
-  100%
-  {
-    transform:scale(0.8);
-  transform-origin: center;
+  8% {
+    opacity:1;
+   /* box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;*/
+    box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+  }
+  70% {
+    opacity:0.7;
+     /*  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;*/
+      box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+  }
+  100% {
+    opacity:1;
+      /* box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;*/
+       box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+  }
+}
+
+
+
+@keyframes increaseLightCircle {
+
+
+    0% {opacity:0}
+
+    100% {opacity:1}
+}
+
+
+
+.spinnyAppImgContainer {
+   
+ 
+    z-index: -1;
+    position: absolute;
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/spinnyApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+   
+}
+
+
+.spinnyVinnyApp
+{
+  
+  
+   position: absolute;
+    left: 180%;
+    top: 25%;
+    width: 100px;
+    height: 100px;
+        transition: all 1s ease-in-out;
+
+}
+
+.spinnyAppImgContainer.showImg
+{
+     opacity:  0;
+    animation: showImage 1s 6s linear forwards;
+}
+
+.spinnyAppImgContainer.showImage
+{
+     opacity:  0;
+    animation: showImage 0.2s linear forwards;
+}
+
+.spinnyVinnyApp:hover .spinnyAppImgContainer{
+        height: 100px;
+      width:100px;
+        display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-size:contain;
+       background: url(../images/spinnyApp.png) no-repeat;
+       background-size: 100%;
+        opacity:  1;
+
+          animation: shake 0.5s linear infinite; 
+
+}
+
+
+
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.jumpyAppImgContainer {
+   
+ 
+    z-index: -1;
+    position: absolute;
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/jumpyApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+   
+}
+
+
+.jumpyVinnyApp
+{
+  
+  
+   position: absolute;
+    right: 150%;
+    top: 25%;
+    width: 100px;
+    height: 100px;
+        transition: all 1s ease-in-out;
+
+}
+
+.jumpyAppImgContainer.showImg
+{
+     opacity:  0;
+    animation: showImage 1s 6s linear forwards;
+}
+
+.jumpyAppImgContainer.showImage
+{
+     opacity:  0;
+    animation: showImage 0.2s linear forwards;
+}
+
+.jumpyVinnyApp:hover .jumpyAppImgContainer{
+        height: 100px;
+      width:100px;
+        display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-size:contain;
+       background: url(../images/jumpyApp.png) no-repeat;
+       background-size: 100%;
+        opacity:  1;
+
+
+
+          animation: shake 0.5s linear infinite; 
+}
+
+
+
+.launchyAppImgContainer {
+   
+ 
+    z-index: -1;
+    position: absolute;
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/launchyApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+   
+}
+
+
+.launchyVinnyApp
+{
+  
+  
+   position: absolute;
+   right: 400%;
+    top: 150%;
+    width: 100px;
+    height: 100px;
+        transition: all 1s ease-in-out;
+
+}
+
+.launchyAppImgContainer.showImg
+{
+     opacity:  0;
+    animation: showImage 1s 6s linear forwards;
+}
+
+.launchyAppImgContainer.showImage
+{
+     opacity:  0;
+    animation: showImage 0.2s linear forwards;
+}
+
+.launchyVinnyApp:hover .launchyAppImgContainer{
+        height: 100px;
+      width:100px;
+        display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-size:contain;
+       background: url(../images/launchyApp.png) no-repeat;
+       background-size: 100%;
+        opacity:  1;
+
+
+
+          animation: shake 0.5s linear infinite; 
+}
+
+
+
+
+.glidyAppImgContainer {
+   
+ 
+    z-index: -1;
+    position: absolute;
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/glidyApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+   
+}
+
+
+.glidyVinnyApp
+{
+  
+  
+   position: absolute;
+   left: 430%;
+    top: 150%;
+    width: 100px;
+    height: 100px;
+        transition: all 1s ease-in-out;
+
+}
+
+.glidyAppImgContainer.showImg
+{
+     opacity:  0;
+    animation: showImage 1s 6s linear forwards;
+}
+
+.glidyAppImgContainer.showImage
+{
+     opacity:  0;
+    animation: showImage 0.2s linear forwards;
+}
+
+.glidyVinnyApp:hover .glidyAppImgContainer{
+        height: 100px;
+      width:100px;
+        display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-size:contain;
+       background: url(../images/glidyApp.png) no-repeat;
+       background-size: 100%;
+        opacity:  1;
+
+
+
+          animation: shake 0.5s linear infinite; 
+}
+
+
+
+.babyAppImgContainer {
+   
+ 
+    z-index: -1;
+    position: absolute;
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/babyApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+   
+}
+
+
+.babyApp
+{
+  
+  
+   position: absolute;
+   left: 510%;
+    bottom: 100%;
+    width: 100px;
+    height: 100px;
+        transition: all 1s ease-in-out;
+
+}
+
+.babyAppImgContainer.showImg
+{
+     opacity:  0;
+    animation: showImage 1s 6s linear forwards;
+}
+
+.babyAppImgContainer.showImage
+{
+     opacity:  0;
+    animation: showImage 0.2s linear forwards;
+}
+
+.babyApp:hover .babyAppImgContainer{
+        height: 100px;
+      width:100px;
+        display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-size:contain;
+       background: url(../images/babyApp.png) no-repeat;
+       background-size: 100%;
+        opacity:  1;
+
+
+
+          animation: shake 0.5s linear infinite; 
+}
+
+
+
+
+
+.singlishAppImgContainer {
+   
+ 
+    z-index: -1;
+    position: absolute;
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/singlishApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+   
+}
+
+
+.singlishAppImgContainer {
+   
+ 
+    z-index: -1;
+    position: absolute;
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/singlishApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+   
+}
+
+
+.singlishApp
+{
+  
+  
+   position: absolute;
+       left: 250%;
+    bottom: 220%;
+    width: 100px;
+    height: 100px;
+        transition: all 1s ease-in-out;
+
+}
+
+.singlishAppImgContainer.showImg
+{
+     opacity:  0;
+    animation: showImage 1s 6s linear forwards;
+}
+
+.singlishAppImgContainer.showImage
+{
+     opacity:  0;
+    animation: showImage 0.2s linear forwards;
+}
+
+.singlishApp:hover .singlishAppImgContainer{
+        height: 100px;
+      width:100px;
+        display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-size:contain;
+       background: url(../images/singlishApp.png) no-repeat;
+       background-size: 100%;
+        opacity:  1;
+
+
+
+          animation: shake 0.5s linear infinite; 
+}
+
+
+
+
+
+.babyAppImgContainer {
+   
+ 
+    z-index: -1;
+    position: absolute;
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/babyApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+   
+}
+
+.betterApp
+{
+  
+  
+   position: absolute;
+   right: 510%;
+    bottom: 100%;
+    width: 100px;
+    height: 100px;
+        transition: all 1s ease-in-out;
+
+}
+
+.betterAppImgContainer.showImg
+{
+     opacity:  0;
+    animation: showImage 1s 6s linear forwards;
+}
+
+.betterAppImgContainer.showImage
+{
+     opacity:  0;
+    animation: showImage 0.2s linear forwards;
+}
+
+.betterApp:hover .betterAppImgContainer{
+        height: 100px;
+      width:100px;
+        display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-size:contain;
+       background: url(../images/betterApp.png) no-repeat;
+       background-size: 100%;
+        opacity:  1;
+
+
+
+          animation: shake 0.5s linear infinite; 
+}
+
+
+
+.betterAppImgContainer {
+   
+ 
+    z-index: -1;
+    position: absolute;
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/betterApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+   
+}
+
+
+
+
+
+
+.stickervAppImgContainer {
+   
+ 
+    z-index: -1;
+    position: absolute;
+  height: 100px;
+  width:100px;
+    display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size:contain;
+   background: url(../images/stickervApp2.png) no-repeat;
+   background-size: 100%;
+    opacity:  0;
+   
+}
+
+
+.stickervApp
+{
+  
+  
+   position: absolute;
+          right: 220%;
+    bottom: 220%;
+    width: 100px;
+    height: 100px;
+        transition: all 1s ease-in-out;
+
+}
+
+.stickervAppImgContainer.showImg
+{
+     opacity:  0;
+    animation: showImage 1s 6s linear forwards;
+}
+
+.stickervAppImgContainer.showImage
+{
+     opacity:  0;
+    animation: showImage 0.2s linear forwards;
+}
+
+.stickervApp:hover .stickervAppImgContainer{
+        height: 100px;
+      width:100px;
+        display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-size:contain;
+       background: url(../images/stickervApp.png) no-repeat;
+       background-size: 100%;
+        opacity:  1;
+
+
+
+          animation: shake 0.5s linear infinite; 
+}
+
+
+
+
+
+
+@keyframes showImage{
+  0%{
+    opacity:  0;
+  }
+    100% {
+    opacity: 1;
+    }
+}
+
+
+
+
+.spacing
+{
+  height: 1000px;
+  position: relative;
+}
+
+.middleLine
+{
+  position: absolute;
+  height: 0px;
+   margin-right: 50%;
+   margin-left: 50%;
+    border-right:5px solid white;
+    box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 4px #fff, 0 0 20px #befbff, 0 0 25px #befbff, 0 0 30px #befbff, 0 0 35px #befbff, 0 0 40px #befbff;
+   /* animation: increaseDown 5s linear forwards;*/
+}
+.middleLine.animated
+{
+    z-index: 20;
+    height: 0px;
+   animation: increaseDown 2s 0s linear forwards;
+}
+
+.middleLine1
+{
+  position: absolute;
+  height: 0px;
+   margin-right: 50%;
+   margin-left: 50%;
+    border-right:5px solid white;
+   box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 4px #fff, 0 0 20px #befbff, 0 0 25px #befbff, 0 0 30px #befbff, 0 0 35px #befbff, 0 0 40px #befbff;
+   /* animation: increaseDown 5s linear forwards;*/
+}
+.middleLine1.animated
+{
+
+    height: 0px;
+   animation: increaseDownNi 1.6s 2s linear forwards;
+}
+@keyframes increaseDownNi {
+  0%{
+    height: 0px;
+  }
+    100% {
+    height: 600px;
+    }
+}
+
+
+.mainSquare
+{
+    transform-origin: top;
+    transform: rotateZ(45deg);
+    position: absolute;
+     left: 48.95%;
+    top: 63.5%;
+    width: 100px;
+    height: 100px;
+        transition: all 1s ease-in-out;
+
+}
+
+
+.mainLines
+{
+  position: absolute;
+   left:50.3%;
+     top: 67%;
+}
+.mainSquareLeftTop
+{
+  -webkit-backface-visibility: hidden;
+    position: absolute;
+      top: -3px;
+    width: 0px;
+    border-bottom:3px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+
+
+}
+.mainSquareLeftTop.animated
+{
+  
+    width: 0px;
+   animation: increaseDownSan 0.4s 3.6s linear forwards, flicker 4s 6s linear infinite;
+}
+@keyframes increaseDownSan {
+  0%{
+    width: : 0px;
+  }
+    100% {
+    width: 100px;
+    }
+}
+
+.mainSquareRightTopHolder
+{
+  -webkit-backface-visibility: hidden;
+    position: absolute;
+    transform-origin: top;
+      transform: rotateZ(90deg) translate(50%, 1600%);
+ 
+}
+.mainSquareRightTop
+{
+  -webkit-backface-visibility: hidden;
+    position: absolute;
+ 
+    width: 0px;
+    border-bottom:3px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+
+
+}
+.mainSquareRightTop.animated
+{
+  
+    width: 0px;
+   animation: increaseDownSan 0.4s 3.6s linear forwards, flicker 4s 6s linear infinite;
+}
+
+.mainSquareLeftBottom
+{
+  -webkit-backface-visibility: hidden;
+    position: absolute;
+      transform-origin: top;
+      transform:  translateY(3300%);
+    width: 0px;
+    border-bottom:3px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+
+
+}
+.mainSquareLeftBottom.animated
+{
+  
+    width: 0px;
+   animation: increaseDownSan 0.4s 4s linear forwards, flicker 4s 6s linear infinite;
+}
+
+.mainSquareRightBottomHolder
+{
+  -webkit-backface-visibility: hidden;
+    position: absolute;
+    transform-origin: top;
+      transform: rotateZ(90deg);
+      left: 100px;
+ 
+}
+.mainSquareRightBottom
+{
+  -webkit-backface-visibility: hidden;
+    position: absolute;
+  
+
+    border-bottom:3px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+
+
+}
+
+
+.mainSquareRightBottom.animated
+{
+  width: 0px;
+
+   animation: increaseDownSan 0.4s 4s linear forwards, flicker 4s 6s linear infinite;
+}
+
+
+.mainSquareRightBottom.animation
+{
+    width: 100px;
+
+   animation: flicker 4s linear infinite;
+}
+
+.mainSquare:hover .mainSquareRightBottom.animation
+{
+    width: 100px;
+
+   animation : none;
+}
+
+
+.mainSquareLeftBottom.animation
+{
+    width: 100px;
+
+   animation: flicker 4s linear infinite;
+}
+
+.mainSquare:hover .mainSquareLeftBottom.animation
+{
+    width: 100px;
+
+   animation : none;
+}
+
+
+.mainSquareRightTop.animation
+{
+    width: 100px;
+
+   animation: flicker 4s linear infinite;
+}
+
+.mainSquare:hover .mainSquareRightTop.animation
+{
+    width: 100px;
+
+   animation : none;
+}
+.mainSquareLeftTop.animation
+{
+    width: 100px;
+
+   animation: flicker 4s linear infinite;
+}
+
+.mainSquare:hover .mainSquareLeftTop.animation
+{
+    width: 100px;
+
+   animation : none;
+}
+
+
+
+@keyframes flicker {
+  0% {
+    opacity:0.1;
+       box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+  2% {
+    opacity:1;
+        box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+  4% {
+    opacity:0.1;
+       box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+  
+  8% {
+    opacity:1;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+  70% {
+    opacity:0.7;
+       box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+  100% {
+    opacity:1;
+       box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+}
+
+
+.mainSquareRightLineHolder
+{
+   -webkit-backface-visibility: hidden;
+    position: absolute;
+  
+   left: 100px;
+
+ 
+}
+
+
+.mainSquareRightLine
+{
+   -webkit-backface-visibility: hidden;
+    position: absolute;
+    width: 0px;
+
+  
+
+    border-bottom:3px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+
+
+}
+
+.mainSquareRightLine.animated
+{
+  
+    width: 0px;
+   animation: increaseDownShi 0.4s 4.4s linear forwards, flicker 8s 6s linear infinite;
+}
+
+@keyframes increaseDownShi {
+  0%{
+    width: : 0px;
+  }
+    100% {
+    width: 150px;
+
+}
+}
+
+.RightLineSengetUpHolder
+{
+     -webkit-backface-visibility: hidden;
+    position: absolute;
+
+    left: 170px;
+         transform: rotateZ(-45deg);
+    transform-origin: left;
+    border-bottom:3px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+}
+
+.RightLineSengetUp
+{
+     -webkit-backface-visibility: hidden;
+    position: absolute;
+
+    border-bottom:3px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+}
+.RightLineSengetUp.animated
+{
+  
+    width: 0px;
+   animation: increaseDownShi 0.4s 4.8s linear forwards, flicker 8s 6s linear infinite;
+}
+
+.RightLineSengetUpHorzHolder
+{
+     -webkit-backface-visibility: hidden;
+    position: absolute;
+  
+  left: 170px;
+          transform: rotateZ(45deg);
+    transform-origin: center;
+  
+}
+
+.RightLineSengetUpHorz
+{
+     -webkit-backface-visibility: hidden;
+    position: absolute;
+ 
+         
+    border-bottom:3px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+}
+.RightLineSengetUpHorz.animated
+{
+  
+    width: 0px;
+   animation: increaseDownShi 0.4s 5.2s linear forwards, flicker 8s 6s linear infinite;
+}
+
+
+.RightLineSengetUpSengetHolder
+{
+     -webkit-backface-visibility: hidden;
+    position: absolute;
+ 
+   left: 200px;
+          transform:  rotateZ(-90deg);
+    transform-origin: right;
+
+}
+
+.RightLineSengetUpSenget
+{
+     -webkit-backface-visibility: hidden;
+    position: absolute;
+  
+    border-bottom:3px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+}
+
+.RightLineSengetUpSenget.animated
+{
+  
+    width: 0px;
+   animation: increaseDownShi 0.4s 5.2s linear forwards, flicker 8s 6s linear infinite;
+}
+
+
+.flipLinesToLeft
+{
+  transform: scaleX(-1);
+}
+
+
+
+.sideLine1
+{
+    position: absolute;
+    margin-left:50%;
+    margin-top:20%;
+    width: 0px;
+    border-bottom:5px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+
+}
+.sideLine1.animated
+{
+  
+      animation: increaseRight 0.5s 0.5s linear forwards;
+}
+.sideLine1Down
+{
+    position: absolute;
+ 
+    margin-left:99.4%;
+    width: 0px;
+    border-left:5px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+
+}
+
+.sideLine1Down.animated
+{
     
+      animation: increaseDownIchi 0.2s 1s linear forwards;
+}
+
+
+.sideLine1Circle
+{
+    position: absolute;
+
+    right: -15px;
+    bottom: -40px;
+    border-radius: 50%;
+    border:20px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+    opacity: 0;
+  
+}
+
+.sideLine1Circle.animated
+{
+
+
+    animation: increaseOpacity 0.2s 1.2s linear forwards;
+}
+
+
+
+
+
+.sideLine2
+{
+    position: absolute;
+    right: 0px;
+    transform: rotatex(180deg);
+    transform-origin: left;
+    margin-right:50%;
+    margin-top:48%;
+    width: 0px;
+    border-bottom:5px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+
+   
+}
+
+.sideLine2.animated
+{
+   
+   animation: increaseLeft 0.5s 1.2s linear forwards;
+}
+
+.sideLine2Up
+{
+    position: absolute;
+  /*s*/
+ 
+    width: 0px;
+    border-left:5px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+   
+}
+
+.sideLine2Up.animated
+{
+ 
+   animation: increaseUp 0.2s 1.7s linear forwards;
+}
+.sideLine2Circle
+{
+    position: absolute;
+
+    right: -15px;
+    bottom: -40px;
+    border-radius: 50%;
+    border:20px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+    opacity: 0;
+    
+  
+}
+
+.sideLine2Circle.animated
+{
+  
+    animation: increaseOpacity 0.2s 1.9s linear forwards;
+}
+
+
+
+
+.sideLine3
+{
+    position: absolute;
+    margin-left:50%;
+    margin-top:65%;
+    width: 0px;
+    border-bottom:5px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+    
+  
+}
+
+.sideLine3.animated
+{
+   
+    animation: increaseRight 0.5s 1.8s linear forwards;
+}
+
+
+
+.sideLine3Circle
+{
+    position: absolute;
+
+    margin-left: 100%;
+    margin-top: -5%;
+
+    border-radius: 50%;
+    border:20px solid white;
+box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+ 
+    opacity: 0;
+    
+    
+}
+
+.sideLine3Circle.animated
+{
+  
+  animation: increaseOpacity 0.2s 2.3s linear forwards;
+}
+
+
+
+
+@keyframes increaseOpacity {
+  0%{
+    opacity: 0;
   }
+    100% {
+    opacity: 1;
+    }
+}
+
+@keyframes increaseRight {
+  0%{
+    width: 0px;
   }
-*/
+    100% {
+    width: 300px;
+    }
+}
+@keyframes increaseDownIchi {
+  0%{
+    height: 0px;
+  }
+    100% {
+    height: 100px;
+    }
+}
+
+@keyframes increaseLeft {
+  0%{
+    width: 0px;
+
+  }
+    100% {
+    width: 350px;
+    }
+}
+@keyframes increaseUp {
+  0%{
+    height: 0px;
+  }
+    100% {
+        height: 100px;
+    }
+}
+
+
+@keyframes increaseDown {
+  0%{
+    height: 0px;
+  }
+    100% {
+        height: 1000px;
+    }
+}
 
 #middleName
 {
@@ -739,12 +2636,14 @@ font-size: 20px;
     /* width: 160px; */
     /* height: 160px; */
     line-height: 40px;
-    margin: -250px 20px 20px -78px;
+    margin: -180px 20px 20px -78px;
     border-radius: 2%;
     border: 3px solid transparent;
     border-color: rgb(94, 207, 178) transparent;
-    transition: all 1s ease-in-out;
+   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: all 0.7s ease-in-out;
     /* animation: animate 4s linear infinite; */
+ animation: step-end;
 }
 
 
@@ -752,7 +2651,7 @@ font-size: 20px;
 {
 
 opacity: 0 ;
-
+ box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 background: #000;
     display: block;
     position: relative;
@@ -766,6 +2665,7 @@ background: #000;
 
      border: 3px solid transparent;
     border-color: rgb(94, 207, 178) transparent;
+
     transition: all .1s ease-in-out;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
@@ -801,6 +2701,15 @@ background: #000;
   border: 3px solid transparent;
 
     border-color: rgb(66, 188, 244) transparent;
+
+      box-shadow: 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px  #befbff,
+    0 0 8px #befbff,
+    0 0 10px  #befbff,
+    0 0 12px  #befbff,
+    0 0 14px  #befbff;
     transition: all .3s ease-in-out;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
@@ -831,6 +2740,14 @@ background: #000;
     border: 3px solid transparent;
 
   border-color: rgb(255, 255, 255) transparent;
+   box-shadow: 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px  #befbff,
+    0 0 8px #befbff,
+    0 0 10px  #befbff,
+    0 0 12px  #befbff,
+    0 0 14px  #befbff;
      -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
       animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
@@ -900,33 +2817,47 @@ background: #000;
     top: 50%;
     width: 180px;
     height: 180px;
-    margin: -188px 20px 20px -78px;
+    margin: -118px 20px 20px -78px;
 
     border-radius: 50%;
     border: 3px solid transparent;
    border-color: rgb(94, 207, 178) transparent;
 
     transition: all .3s ease-in-out;
-
-  
+   box-shadow: 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 10px  #befbff,
+    0 0 15px #befbff,
+    0 0 18px  #befbff,
+    0 0 20px  #befbff,
+    0 0 25px  #befbff;
+       -webkit-animation: spin 3s linear infinite; 
+      animation: spin 3s linear infinite; 
 }
-/*.circleBoi:before {
-    content: "";
-    position: absolute;
-    display: block !important;
-        z-index: -1;
-    top: 5px  !important;
-    left: 5px  !important;
-    right: 5px  !important;
-    bottom: 5px  !important;
 
-    border-radius: 50%;
-    border: 3px solid transparent;
+.circleBoi.fastSpin
+{
 
-  border-color: rgb(255, 255, 255) transparent;
-
+       -webkit-animation: fastSpinShake  0.4s linear infinite; 
+      animation: fastSpinShake  0.4s linear infinite; 
 }
-*/
+
+@keyframes fastSpinShake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(36deg); }
+  20% { transform: translate(-3px, 0px) rotate(72deg);}
+  30% { transform: translate(3px, 2px) rotate(109deg); }
+  40% { transform: translate(1px, -1px) rotate(145deg); }
+  50% { transform: translate(-1px, 2px) rotate(181deg); }
+  60% { transform: translate(-3px, 1px) rotate(217deg);  }
+  70% { transform: translate(3px, 1px) rotate(253deg);  }
+  80% { transform: translate(-1px, -1px) rotate(289deg);  }
+  90% { transform: translate(1px, 2px) rotate(325deg); }
+  100% { transform: translate(0px, 0px) rotate(360deg); }
+}
+
+
 
 @-webkit-keyframes spin {
     0%   {
@@ -1569,13 +3500,13 @@ a:hover {
 /*---------------------------------------
     Galllery section              
 -----------------------------------------*/
-
+/*
 #apps {
-  background: #ffffff;
+  background: #000;
 }
 
 #apps .apps-thumb {
-  background-color: #ffffff;
+  background-color: #000;
   box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
   cursor: pointer;
   display: block;
@@ -1594,7 +3525,7 @@ a:hover {
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
   width: 100%;
-}
+}*/
 
 
 
@@ -1602,9 +3533,9 @@ a:hover {
     Contact section              
 -----------------------------------------*/
 
-#contact, footer {
-  background: #304352;
-  color: #ffffff;
+#contact {
+  background: linear-gradient(rgb(10,14,25), rgb(32, 99, 100));
+
 }
 
 #contact .form-control {
@@ -1725,6 +3656,21 @@ footer {
       padding-left:0 !important;
     }
 
+ 
+  .middleCircle
+  {
+    display:none;
+  }
+
+  .appsHolder
+  {
+    display: block;
+  }
+
+  .mobileAppsHolder
+  {
+    display: none;
+  }
 
 /*---------------------------------------
    Responsive Mobile         
@@ -1744,6 +3690,9 @@ footer {
     {
       transform: translateX(-5%) scale(1, 1) !important;
     }
+
+   
+
 
 
 
@@ -1892,6 +3841,23 @@ footer {
 
 }
 
+@media only screen and (max-width: 1170px) {
+
+
+    .appsHolder, .placeHolderHolder{
+      transform: scale(0.8);
+    }
+
+    .bridge
+    {
+      left: -30%;
+    }
+
+
+}
+
+
+
 @media only screen and (max-width: 1115px) {
 
     .navbar-text {
@@ -1933,7 +3899,27 @@ footer {
     }
 
 
+    .bridge
+    {
+      left: -40%;
+    }
 
+
+    
+
+}
+@media only screen and (max-width: 958px) {
+
+
+.appsHolder, .placeHolderHolder{
+      transform: scale(0.6);
+    }
+
+
+    .bridge
+    {
+      left: -60%;
+    }
 
 }
 
@@ -2082,7 +4068,22 @@ footer {
         background-color: #1b1b1c;
     }
 
+}
 
+@media only screen and (max-width: 730px) {
+
+
+.appsHolder, .placeHolderHolder{
+      transform: scale(0.5);
+    }
+
+
+    .bridge
+    {
+      left: -80%;
+    }
+
+}
 
 
 
@@ -2237,4 +4238,328 @@ footer {
 
 
 
+@media (max-width: 620px) {
 
+ 
+  .middleCircle
+  {
+    z-index: 20;
+    display: block;
+    position: absolute;
+    height: 400px;
+ 
+    background-color: transparent;
+    width: 400px;
+    opacity: 0;
+    left: -10%;
+    top: -10%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
+    transition: 1s linear;
+
+  }
+
+  .middleCircle.upOpa
+  {
+  
+    opacity: 1; 
+    transition-delay: 5s;
+    transition: 1s 4s linear;
+
+  }
+  
+ .middleCircleBack
+{
+
+     z-index: 0;
+    opacity: 0;
+    color: #000;
+    display: block;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    margin: -75px 10px 10px -85px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-color: rgb(66, 188, 244) transparent;
+  /*  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #befbff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 12px #befbff, 0 0 14px #befbff;*/
+    transition: all .3s ease-in-out;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+
+      -webkit-transition: opacity 1s ease-in;
+        -moz-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+        -o-transition: opacity 1s ease-in;
+        transition: opacity 1s ease-in;
+  
+}
+
+  
+ .middleCircleBack.upOpa
+{ 
+
+    opacity: 1; 
+
+    transition: 1s 3s linear;
+
+}
+
+
+
+  .middleCircleBack:before {
+    content: "";
+    position: absolute;
+    display: block !important;
+        z-index: -1;
+    top: 5px  !important;
+    left: 5px  !important;
+    right: 5px  !important;
+    bottom: 5px  !important;
+
+    border-radius: 50%;
+    border: 3px solid transparent;
+
+  border-color: rgb(255, 255, 255) transparent;
+/*   box-shadow: 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px  #befbff,
+    0 0 8px #befbff,
+    0 0 10px  #befbff,
+    0 0 12px  #befbff,
+    0 0 14px  #befbff;*/
+     -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.middleLine2
+{
+
+
+    
+
+  position: absolute;
+  height: 0px;
+  bottom: 119%;
+  
+  margin-left: 47%;
+  border-left:5px solid white;
+ 
+  box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 4px #fff, 0 0 20px #befbff, 0 0 25px #befbff, 0 0 30px #befbff, 0 0 35px #befbff, 0 0 40px #befbff;
+
+  transform:scale(0.5, -0.5);
+  transform-origin: bottom;
+
+ 
+}
+
+.middleLine2.animated
+{
+
+    height: 0px;
+   animation: increaseDownYon 1.6s 2s linear forwards;
+}
+
+@keyframes increaseDownYon {
+  0%{
+    height: 0px;
+  }
+    100% {
+    height: 800px;
+    }
+}
+
+.middlecircleImg2
+{
+
+    opacity: 0;
+    /* z-index: 100; */
+    position: relative;
+    height: 300px;
+    width: 300px;
+    display: block;
+    /* margin-right: 100px; */
+    left: -1%;
+    /* margin-lefT: 100px; */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-size: contain;
+  
+    background-size: 100%;
+
+    transition: transform 500ms ease-in-out, opacity 1s 4s ease-in-out;
+  
+}
+
+.middlecircleImg2.upOpa
+{
+
+    opacity: 1;
+
+
+    transition: transform 500ms ease-in-out, opacity 1s 4s ease-in-out;
+}
+.CarousellHolder
+{
+
+      position: relative;
+    /* top: 550%; */
+    left: 5;
+    left: 25%;
+    height: 500px;
+    /* bottom: 50%; */
+    margin-top: 35%;
+}
+
+
+.buttonCarousell
+{
+    width: 550px;
+    height: 100px;
+    /* left: 50%; */
+    /* margin-left: 15%; */
+    right: 29%;
+    position: absolute;
+    top: 25%;
+}
+
+.rightArrow
+{
+  float:right;
+}
+
+
+.leftArrow
+{
+  float:left;
+}
+
+#lefty
+{
+   font-size:48px;
+   color:rgb(66, 188, 244);
+
+}
+
+#righty
+{
+   font-size:48px;
+   color:rgb(66, 188, 244);
+
+}
+
+
+
+  .appsHolder
+  {
+    display: none;
+  }
+
+
+
+  #bannersu
+  {
+       transform: scale(0.9) translateY(250%) !important;
+  }
+
+}
+
+
+@media (max-width: 994px) 
+{
+.UnderConstruction
+{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 50%;
+    width: 500px;
+    height: 500px;
+    display: block;
+    transform: scale(1.5, 1.5);
+}
+#text {
+    text-align: center;
+    border: 5px solid #1086e8;
+    width: 400px;
+    top: 150px;
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    margin: -200px 0 0 -350px;
+    animation: border-flicker2 2s linear infinite;
+}
+}
+
+@media (max-width: 700px) {
+.UnderConstruction
+{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 50%;
+    width: 500px;
+    height: 500px;
+    display: block;
+    transform: scale(1.2, 1.2);
+}
+#text {
+    text-align: center;
+    border: 5px solid #1086e8;
+    width: 400px;
+    top: 150px;
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    margin: -200px 0 0 -400px;
+    animation: border-flicker2 2s linear infinite;
+}
+}
+@media (max-width: 560px) {
+.UnderConstruction
+{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 50%;
+    width: 500px;
+    height: 500px;
+    display: block;
+    transform: scale(1, 1);
+}
+#text {
+    text-align: center;
+    border: 5px solid #1086e8;
+    width: 400px;
+    top: 150px;
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+      margin: -150px 0 0 -450px;
+    animation: border-flicker2 2s linear infinite;
+}
+}
+
+
+@media (max-width: 435px) {
+.UnderConstruction
+{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 50%;
+    width: 500px;
+    height: 500px;
+    display: block;
+    transform: scale(0.8, 0.8);
+}
+#text {
+    text-align: center;
+    border: 5px solid #1086e8;
+    width: 400px;
+    top: 150px;
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    margin: -150px 0 0 -520px;
+    animation: border-flicker2 2s linear infinite;
+}
+}

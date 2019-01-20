@@ -152,6 +152,12 @@ $(window).load(function(){
     });
 
 
+
+
+ 
+
+
+
 });
 
 
@@ -213,7 +219,454 @@ anime.timeline({loop: false})
   });
 
 
+
+
+
+
+
 $(document).ready(function() {
+
+
+var flipCirc;
+var degreeSU = 0;
+ var interval2 = 2000;
+ var decreasingSU;
+ // pic1 = $('middleCircleImg2ID').css('background-image', 'url(' + (../images/originAppCirc.png) + ')');
+ // pic2 = $('middleCircleImg2ID').css('background-image', 'url(' + (../images/launchyApp2.png) + ')');
+
+
+
+ flipCirc = setInterval ( () => {
+              document.getElementById("middleCircleImg2ID").style.transform = 
+               'rotateY('+ degreeSU +'deg)';
+
+              
+               console.log(degreeSU);
+              //we use the ES6 template literal to insert the variable "position"
+
+
+              if(decreasingSU)
+              {
+                  if(degreeSU === 0)
+                  {
+                    decreasingSU = false;
+                    degreeSU += 180;
+                  }
+                  else
+                  {
+                    degreeSU -= 180;
+                  }
+              }
+              else
+              {
+                  if(degreeSU === 1440)
+                  {
+                    decreasingSU = true;
+                     degreeSU -= 180;
+                  }
+                  else
+                  {
+                    degreeSU += 180;
+                  }
+                  
+              }
+
+
+
+              if(degreeSU === 0)
+              {
+                $('#middleCircleImg2ID').css("background-image", "url('images/originAppCirc.png')");
+                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.VinnysOrigin");
+              }
+              else  if(degreeSU === 180)
+              {
+                $('#middleCircleImg2ID').css("background-image", "url('images/glidyApp2.png')");
+                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.GlidyVinny");
+
+              }
+               else  if(degreeSU === 360)
+              {
+                $('#middleCircleImg2ID').css("background-image", "url('images/spinnyApp2.png')");
+                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.SpinyVinny");
+              }
+               else  if(degreeSU === 540)
+              {
+                $('#middleCircleImg2ID').css("background-image", "url('images/launchyApp2.png')");
+                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.LaunchyVinny");
+              }
+               else  if(degreeSU === 720)
+              {
+                $('#middleCircleImg2ID').css("background-image", "url('images/jumpyApp2.png')");
+                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.klausology.JumpyVinny");
+              }
+               else  if(degreeSU === 900)
+              {
+                $('#middleCircleImg2ID').css("background-image", "url('images/babyApp2.png')");
+                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.BabyHero");
+              }
+               else  if(degreeSU === 1080)
+              {
+                $('#middleCircleImg2ID').css("background-image", "url('images/betterApp2.png')");
+                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.ABetterChoice");
+              }
+               else  if(degreeSU === 1260)
+              {
+                $('#middleCircleImg2ID').css("background-image", "url('images/singlishApp2.png')");
+                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.klausology.singlishstickerapp");
+              }
+              else
+              {
+                 $('#middleCircleImg2ID').css("background-image", "url('images/stickervApp2.png')");
+                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.klausology.vinnyandfinnysticker");
+
+              }
+              //reset the position to 256px, once position exceeds 1536px
+              }
+              , interval2 ); //end of setInterval
+               //end of animateScript()
+       
+
+
+var triggerOnce;
+var beginWalkieWalkie = false;
+var tID; //we will use this variable to clear the setInterval()
+var    position = 64; //start position for the image slicer
+const  interval = 100; //100 ms of interval for the setInterval()
+
+
+function youMayBeginDesu()
+{
+    if(beginWalkieWalkie)
+    {
+              
+           if(!triggerOnce)
+            {
+              tID = setInterval ( () => {
+              document.getElementById("vinnySpriteID").style.backgroundPosition = 
+              `-${position}px 0px`; 
+              //we use the ES6 template literal to insert the variable "position"
+              if (position < 576)
+              { position = position + 64;}
+              //we increment the position by 256 each time
+              else
+              { position = 64; }
+              //reset the position to 256px, once position exceeds 1536px
+              }
+              , interval ); //end of setInterval
+               //end of animateScript()
+               triggerOnce = true;
+             }
+
+              $('.vinnyHolder').css({
+          
+                left: event.clientX,
+   
+            });
+    }
+    else
+    {
+         clearInterval(tID);
+        
+         triggerOnce = false;
+
+          document.getElementById("vinnySpriteID").style.backgroundPosition = 
+              `0px 0px`; 
+    }
+}
+
+
+
+
+$(document).on('mousemove', (event) => {
+
+ 
+
+
+
+   mouseXY.X = event.clientX; 
+
+
+  
+
+   var vinny2DesuYoLeftPos = $(".vinnyHolder").position();
+   var faceRight = true;
+
+
+  
+
+     
+
+
+      if((mouseXY.X + 100) < vinny2DesuYoLeftPos.left)
+      {
+        
+         beginWalkieWalkie = true;
+         youMayBeginDesu();
+
+        if(faceRight)
+        { 
+        
+          document.getElementById('vinnyHolderID').style.transform = "scaleX(-1)";
+         
+
+          faceRight = false;
+
+        }
+        else
+        {  
+            
+            document.getElementById('vinnyHolderID').style.transform = "scaleX(1)";
+
+
+            faceRight = true;
+
+
+
+        }
+      }
+      else if((mouseXY.X) > (vinny2DesuYoLeftPos.left + 100))
+      {
+        
+         beginWalkieWalkie = true;
+         youMayBeginDesu();
+
+        if(faceRight)
+        {  
+         
+          document.getElementById('vinnyHolderID').style.transform = "scaleX(1)";
+
+            
+
+          faceRight = true;
+        }
+        else
+        {  
+          
+          document.getElementById('vinnyHolderID').style.transform = "scaleX(-1)";
+
+
+         
+          faceRight = false;
+        }
+      }
+      else
+      {
+            beginWalkieWalkie = false;
+             youMayBeginDesu();
+      }
+   
+
+});
+
+
+
+    // $('.SpinnyApp').addClass('animated');
+    //         $('.spinnyAppImgContainer').addClass('showImg');
+
+  $(".spinnyVinnyApp").hover(function()
+  {
+    document.getElementById('SpinnyAppID').style.opacity = "1";
+    $(".SpinnyApp").removeClass("animated");
+        $('.spinnyAppImgContainer').removeClass('showImg');
+    $('.spinnyAppImgContainer').addClass('showImage');
+    $('.circleBoi').addClass('fastSpin');
+
+
+
+  }, 
+
+  function()
+  {
+     
+      $(".SpinnyApp").addClass("animation");
+       $('.circleBoi').removeClass('fastSpin');
+
+  });
+
+
+  $(".jumpyVinnyApp").hover(function()
+  {
+    document.getElementById('JumpyAppID').style.opacity = "1";
+    $(".JumpyApp").removeClass("animated");
+    $('.jumpyAppImgContainer').removeClass('showImg');
+    $('.jumpyAppImgContainer').addClass('showImage');
+    $('.circleBoi').addClass('fastSpin');
+
+
+
+  }, 
+
+  function()
+  {
+     
+      $(".JumpyApp").addClass("animation");
+         $('.circleBoi').removeClass('fastSpin');
+  });
+
+
+
+  $(".launchyVinnyApp").hover(function()
+  {
+    document.getElementById('LaunchyAppID').style.opacity = "1";
+    $(".LaunchyApp").removeClass("animated");
+    $('.launchyAppImgContainer').removeClass('showImg');
+    $('.launchyAppImgContainer').addClass('showImage');
+    $('.circleBoi').addClass('fastSpin');
+
+
+
+  }, 
+
+  function()
+  {
+     
+      $(".LaunchyApp").addClass("animation");
+         $('.circleBoi').removeClass('fastSpin');
+  });
+
+  $(".glidyVinnyApp").hover(function()
+  {
+    document.getElementById('GlidyAppID').style.opacity = "1";
+    $(".GlidyApp").removeClass("animated");
+    $('.glidyAppImgContainer').removeClass('showImg');
+    $('.glidyAppImgContainer').addClass('showImage');
+    $('.circleBoi').addClass('fastSpin');
+
+
+
+  }, 
+
+  function()
+  {
+     
+      $(".GlidyApp").addClass("animation");
+         $('.circleBoi').removeClass('fastSpin');
+  });
+
+
+  $(".babyApp").hover(function()
+  {
+    document.getElementById('BabyAppID').style.opacity = "1";
+    $(".BabyApp").removeClass("animated");
+    $('.babyAppImgContainer').removeClass('showImg');
+    $('.babyAppImgContainer').addClass('showImage');
+    $('.circleBoi').addClass('fastSpin');
+
+
+
+  }, 
+
+  function()
+  {
+     
+      $(".BabyApp").addClass("animation");
+         $('.circleBoi').removeClass('fastSpin');
+  });
+
+
+  $(".betterApp").hover(function()
+  {
+    document.getElementById('BetterAppID').style.opacity = "1";
+    $(".BetterApp").removeClass("animated");
+    $('.betterAppImgContainer').removeClass('showImg');
+    $('.betterAppImgContainer').addClass('showImage');
+    $('.circleBoi').addClass('fastSpin');
+
+
+
+  }, 
+
+  function()
+  {
+     
+      $(".BetterApp").addClass("animation");
+         $('.circleBoi').removeClass('fastSpin');
+  });
+
+
+
+
+  $(".singlishApp").hover(function()
+  {
+    document.getElementById('SinglishAppID').style.opacity = "1";
+    $(".SinglishApp").removeClass("animated");
+    $('.singlishAppImgContainer').removeClass('showImg');
+    $('.singlishAppImgContainer').addClass('showImage');
+    $('.circleBoi').addClass('fastSpin');
+
+
+
+  }, 
+
+  function()
+  {
+     
+      $(".SinglishApp").addClass("animation");
+         $('.circleBoi').removeClass('fastSpin');
+  });
+
+
+  $(".stickervApp").hover(function()
+  {
+    document.getElementById('StickervAppID').style.opacity = "1";
+    $(".StickervApp").removeClass("animated");
+    $('.stickervAppImgContainer').removeClass('showImg');
+    $('.stickervAppImgContainer').addClass('showImage');
+    $('.circleBoi').addClass('fastSpin');
+
+
+
+  }, 
+
+  function()
+  {
+     
+      $(".StickervApp").addClass("animation");
+         $('.circleBoi').removeClass('fastSpin');
+  });
+
+
+
+  $(".mainSquare").hover(function()
+  {
+    document.getElementById('squareRB').style.width = "100px";
+    $("#squareRB").removeClass("animated");
+
+
+    document.getElementById('squareLB').style.width = "100px";
+    $("#squareLB").removeClass("animated");
+
+
+    document.getElementById('squareRT').style.width = "100px";
+    $("#squareRT").removeClass("animated");
+
+
+    document.getElementById('squareLT').style.width = "100px";
+    $("#squareLT").removeClass("animated");
+
+    $('.circleBoi').addClass('fastSpin');
+
+    
+
+  }, 
+
+  function()
+  {
+    $("#squareRB").addClass("animation");
+      $("#squareLB").addClass("animation");
+        $("#squareRT").addClass("animation");
+          $("#squareLT").addClass("animation");
+          
+   $('.circleBoi').removeClass('fastSpin');
+
+  });
+
+
+
+
+  
+
+
 
   /* Hide mobile menu after clicking on a link
     -----------------------------------------------*/
@@ -227,11 +680,90 @@ $(document).ready(function() {
     $(function() {
         $('.navbar-default a').bind('click', function(event) {
             var $anchor = $(this);
+
+           var consolu =  $(this).attr('href');
+          
+      
+
+          if(consolu != "#apps")
+          {
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 49
             }, 1000);
             event.preventDefault();
-        });
+          }
+          else
+          {
+              $('.middleLine').addClass('animated');
+                   $('.sideLine1').addClass('animated');
+                    $('.sideLine1Down').addClass('animated');
+                     $('.sideLine1Circle').addClass('animated');
+                      $('.sideLine2').addClass('animated');
+                       $('.sideLine2Up').addClass('animated');
+                        $('.sideLine2Circle').addClass('animated');
+                         $('.sideLine3').addClass('animated');
+                          $('.sideLine3Circle').addClass('animated');
+                       
+
+                       $('.middleLine1').addClass('animated');
+                        $('.mainSquareLeftTop').addClass('animated');
+                          $('.mainSquareRightTop').addClass('animated');
+                             $('.mainSquareLeftBottom').addClass('animated');
+                                 $('.mainSquareRightBottom').addClass('animated');
+                                   $('.mainSquareRightLine').addClass('animated');
+                      $('.RightLineSengetUp').addClass('animated');
+                         $('.RightLineSengetUpHorz').addClass('animated');
+                         $('.RightLineSengetUpSenget').addClass('animated');
+
+                      $('.originAppImgContainer').addClass('showImg');
+
+                        $('.SpinnyApp').addClass('animated');
+                        $('.spinnyAppImgContainer').addClass('showImg');
+
+                        $('.JumpyApp').addClass('animated');
+                        $('.jumpyAppImgContainer').addClass('showImg');
+
+
+
+                        $('.LaunchyApp').addClass('animated');
+                        $('.launchyAppImgContainer').addClass('showImg');
+
+
+                        $('.GlidyApp').addClass('animated');
+                        $('.glidyAppImgContainer').addClass('showImg');
+
+
+                        $('.BabyApp').addClass('animated');
+                        $('.babyAppImgContainer').addClass('showImg');
+
+
+
+                        $('.BetterApp').addClass('animated');
+                        $('.betterAppImgContainer').addClass('showImg');
+
+
+                        $('.SinglishApp').addClass('animated');
+                        $('.singlishAppImgContainer').addClass('showImg');
+
+                        $('.StickervApp').addClass('animated');
+                        $('.stickervAppImgContainer').addClass('showImg');
+
+
+                        
+          $('.middleCircle').addClass('upOpa');
+          $('.middlecircleImg2').addClass('upOpa');
+          $('.middleCircleBack').addClass('upOpa');
+          $('.middleLine2').addClass('animated');
+  
+
+                         $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 49
+            }, 5000);
+            event.preventDefault();
+
+          }
+      });
+      
     });
 
 
@@ -264,7 +796,7 @@ if(is_touch_device())
     { 
         
      
-          console.log(direction);
+       
 
 
           if(delay) return;
@@ -289,16 +821,104 @@ if(is_touch_device())
           }
           
 
+console.log("direction = " + direction + ", i = " + i);
 
 
 
+  if(i === 1)
+  {
+      $('.middleLine').addClass('animated');
+       $('.sideLine1').addClass('animated');
+        $('.sideLine1Down').addClass('animated');
+         $('.sideLine1Circle').addClass('animated');
+          $('.sideLine2').addClass('animated');
+           $('.sideLine2Up').addClass('animated');
+            $('.sideLine2Circle').addClass('animated');
+             $('.sideLine3').addClass('animated');
+              $('.sideLine3Circle').addClass('animated');
+           
 
-          if(i >= 0 && i < a.length) {
-            $('html,body').animate({
-              scrollTop: a[i].offsetTop
-            }, 1000, 'easeInOutExpo'
-            );
+           $('.middleLine1').addClass('animated');
+            $('.mainSquareLeftTop').addClass('animated');
+              $('.mainSquareRightTop').addClass('animated');
+                 $('.mainSquareLeftBottom').addClass('animated');
+                     $('.mainSquareRightBottom').addClass('animated');
+                       $('.mainSquareRightLine').addClass('animated');
+          $('.RightLineSengetUp').addClass('animated');
+             $('.RightLineSengetUpHorz').addClass('animated');
+             $('.RightLineSengetUpSenget').addClass('animated');
+
+          $('.originAppImgContainer').addClass('showImg');
+
+            $('.SpinnyApp').addClass('animated');
+            $('.spinnyAppImgContainer').addClass('showImg');
+
+            $('.JumpyApp').addClass('animated');
+            $('.jumpyAppImgContainer').addClass('showImg');
+
+
+
+            $('.LaunchyApp').addClass('animated');
+            $('.launchyAppImgContainer').addClass('showImg');
+
+
+            $('.GlidyApp').addClass('animated');
+            $('.glidyAppImgContainer').addClass('showImg');
+
+
+            $('.BabyApp').addClass('animated');
+            $('.babyAppImgContainer').addClass('showImg');
+
+
+
+            $('.BetterApp').addClass('animated');
+            $('.betterAppImgContainer').addClass('showImg');
+
+
+            $('.SinglishApp').addClass('animated');
+            $('.singlishAppImgContainer').addClass('showImg');
+
+            $('.StickervApp').addClass('animated');
+            $('.stickervAppImgContainer').addClass('showImg');
+
+          $('.middleCircle').addClass('upOpa');
+          $('.middlecircleImg2').addClass('upOpa');
+          $('.middleCircleBack').addClass('upOpa');
+          $('.middleLine2').addClass('animated');
+
+  
+          if(direction === "up")
+          {
+              if(i >= 0 && i < a.length)
+              {
+                $('html,body').animate({
+                  scrollTop: a[2].offsetTop
+                }, 5000, 'swing'
+                );
+
+              }
           }
+          else
+          {
+              if(i >= 0 && i < a.length)
+              {
+                $('html,body').animate({
+                  scrollTop: a[0].offsetTop
+                }, 2000, 'easeOutExpo'
+                );
+              }
+            }
+  }
+  else
+  {
+    if(i >= 0 && i < a.length) {
+      $('html,body').animate({
+        scrollTop: a[i].offsetTop
+      }, 1000, 'easeInOutExpo'
+      );
+    }
+
+  }
 
 
     }
@@ -335,16 +955,103 @@ else
     }
     
 
+  if(i === 1)
+  {
+      $('.middleLine').addClass('animated');
+       $('.sideLine1').addClass('animated');
+        $('.sideLine1Down').addClass('animated');
+         $('.sideLine1Circle').addClass('animated');
+          $('.sideLine2').addClass('animated');
+           $('.sideLine2Up').addClass('animated');
+            $('.sideLine2Circle').addClass('animated');
+             $('.sideLine3').addClass('animated');
+              $('.sideLine3Circle').addClass('animated');
+           
+
+           $('.middleLine1').addClass('animated');
+            $('.mainSquareLeftTop').addClass('animated');
+              $('.mainSquareRightTop').addClass('animated');
+                 $('.mainSquareLeftBottom').addClass('animated');
+                     $('.mainSquareRightBottom').addClass('animated');
+                       $('.mainSquareRightLine').addClass('animated');
+          $('.RightLineSengetUp').addClass('animated');
+             $('.RightLineSengetUpHorz').addClass('animated');
+             $('.RightLineSengetUpSenget').addClass('animated');
+
+          $('.originAppImgContainer').addClass('showImg');
+
+            $('.SpinnyApp').addClass('animated');
+            $('.spinnyAppImgContainer').addClass('showImg');
+
+            $('.JumpyApp').addClass('animated');
+            $('.jumpyAppImgContainer').addClass('showImg');
 
 
 
+            $('.LaunchyApp').addClass('animated');
+            $('.launchyAppImgContainer').addClass('showImg');
 
+
+            $('.GlidyApp').addClass('animated');
+            $('.glidyAppImgContainer').addClass('showImg');
+
+
+            $('.BabyApp').addClass('animated');
+            $('.babyAppImgContainer').addClass('showImg');
+
+
+
+            $('.BetterApp').addClass('animated');
+            $('.betterAppImgContainer').addClass('showImg');
+
+
+            $('.SinglishApp').addClass('animated');
+            $('.singlishAppImgContainer').addClass('showImg');
+
+            $('.StickervApp').addClass('animated');
+            $('.stickervAppImgContainer').addClass('showImg');
+
+            
+          $('.middleCircle').addClass('upOpa');
+          $('.middlecircleImg2').addClass('upOpa');
+          $('.middleCircleBack').addClass('upOpa');
+          $('.middleLine2').addClass('animated');
+
+          if(wd < 0)
+          {
+              if(i >= 0 && i < a.length)
+              {
+                $('html,body').animate({
+                  scrollTop: a[2].offsetTop
+                }, 5000, 'swing'
+                );
+
+              }
+          }
+          else
+          {
+              if(i >= 0 && i < a.length)
+              {
+                $('html,body').animate({
+                  scrollTop: a[0].offsetTop
+                }, 2000, 'easeOutExpo'
+                );
+              }
+            }
+  }
+  else
+  {
     if(i >= 0 && i < a.length) {
       $('html,body').animate({
         scrollTop: a[i].offsetTop
       }, 1000, 'easeInOutExpo'
       );
     }
+
+  }
+
+
+
 
       
   });
