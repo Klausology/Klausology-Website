@@ -231,10 +231,24 @@ var flipCirc;
 var degreeSU = 0;
  var interval2 = 2000;
  var decreasingSU;
+ var changingAngleUp, changingAngleDown;
  // pic1 = $('middleCircleImg2ID').css('background-image', 'url(' + (../images/originAppCirc.png) + ')');
  // pic2 = $('middleCircleImg2ID').css('background-image', 'url(' + (../images/launchyApp2.png) + ')');
 
 
+$(".rightArrow").click(addDeg);
+function addDeg()
+{
+    changingAngleUp = true;
+    changingAngleDown - false;
+}
+
+$(".leftArrow").click(minusDeg);
+function minusDeg()
+{
+    changingAngleUp = false;
+    changingAngleDown - true;
+}
 
  flipCirc = setInterval ( () => {
               document.getElementById("middleCircleImg2ID").style.transform = 
@@ -250,11 +264,38 @@ var degreeSU = 0;
                   if(degreeSU === 0)
                   {
                     decreasingSU = false;
-                    degreeSU += 180;
+
+                   
+                   if(!changingAngleDown && !changingAngleUp)
+                    {
+                      degreeSU += 180;
+                    }
+                    else if(changingAngleUp)
+                    {
+                      degreeSU += 180;
+                    }
+                    else
+                    {
+                      degreeSU = 1440;
+                    }
+                  
                   }
                   else
                   {
-                    degreeSU -= 180;
+                    if(!changingAngleDown && !changingAngleUp)
+                    {
+                        degreeSU -= 180;
+                    }     
+                    else if(changingAngleUp)
+                    {
+                      degreeSU += 180;
+                    }
+                    else
+                    {
+                       degreeSU -= 180;
+                    }
+
+                   
                   }
               }
               else
@@ -262,16 +303,40 @@ var degreeSU = 0;
                   if(degreeSU === 1440)
                   {
                     decreasingSU = true;
-                     degreeSU -= 180;
+                     
+                       if(!changingAngleDown && !changingAngleUp)
+                      {
+                        degreeSU -= 180;
+                      }
+                      else if(changingAngleUp)
+                      {
+                        degreeSU = 0;
+                      }
+                      else
+                      {
+                         degreeSU -= 180;
+                      }
                   }
                   else
                   {
-                    degreeSU += 180;
+                      if(!changingAngleDown && !changingAngleUp)
+                      {
+                        degreeSU += 180;
+                      }
+                      else if(changingAngleUp)
+                      {
+                        degreeSU += 180;
+                      }
+                      else
+                      {
+                         degreeSU -= 180;
+                      }
                   }
                   
               }
 
 
+console.log(degreeSU);
 
               if(degreeSU === 0)
               {
