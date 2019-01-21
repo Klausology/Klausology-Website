@@ -6,6 +6,104 @@ http://www.templatemo.com/tm-493-snapshot
 */
 
 
+#downloadNowMobile {
+    text-align: center;
+    font-size: 1.5rem;
+    font-color: white;
+    color: #4beec0;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+
+    animation : flickerText 2s ease-in-out infinite;
+}
+
+
+@keyframes flickerText {
+  0% {
+    opacity:0.1;
+       text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+  2% {
+    opacity:1;
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+  4% {
+    opacity:0.1;
+       text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+  
+  8% {
+    opacity:1;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+  70% {
+    opacity:0.7;
+       text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+  100% {
+    opacity:1;
+       text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
+  }
+}
+
+
+
+#mobileIconTitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.mobileAppsHolder
+{
+   margin-top: 45%;
+}
+
+.gallery {
+  background: transparent;
+}
+
+.gallery-cell {
+ 
+  background: black;
+  counter-increment: gallery-cell;
+   width: 50%; /* half-width */
+  height: 450px;
+  margin-right: 10px;
+}
+.gallery img {
+  width: 100%;
+}
+
+
+
+
+
+
+@media (max-width: 767px) 
+{
+.gallery-cell {
+ 
+  background: black;
+  counter-increment: gallery-cell;
+   width: 50%; /* half-width */
+  height: 510px;
+  margin-right: 10px;
+}
+ 
+}
+
+
+@media (max-width: 632px) {
+.gallery-cell {
+ 
+  background: black;
+  counter-increment: gallery-cell;
+   width: 50%; /* half-width */
+  height: 450px;
+  margin-right: 10px;
+}
+ 
+}
 
 #blog
 {
@@ -1993,16 +2091,6 @@ font-size: 20px;
    /* animation: increaseDown 5s linear forwards;*/
 }
 
-.middleLineMob
-{
-  position: absolute;
-  height: 1000px;
-   margin-right: 50%;
-   margin-left: 50%;
-    border-right:5px solid white;
-    box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 4px #fff, 0 0 20px #befbff, 0 0 25px #befbff, 0 0 30px #befbff, 0 0 35px #befbff, 0 0 40px #befbff;
-   /* animation: increaseDown 5s linear forwards;*/
-}
 
 .middleLine.animated
 {
@@ -2388,16 +2476,6 @@ font-size: 20px;
     box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
 
 }
-.sideLine1Mob
-{
-    position: absolute;
-    margin-left:50%;
-    margin-top:20%;
-    width: 300px;
-    border-bottom:5px solid white;
-    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
-
-}
 
 .sideLine1.animated
 {
@@ -2415,16 +2493,6 @@ font-size: 20px;
 
 }
 
-.sideLine1DownMob
-{
-    position: absolute;
- 
-    margin-left:99.4%;
-    width: 100px;
-    border-left:5px solid white;
-    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
-
-}
 
 
 .sideLine1Down.animated
@@ -2444,19 +2512,6 @@ font-size: 20px;
     border:20px solid white;
     box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
     opacity: 0;
-  
-}
-
-.sideLine1CircleMob
-{
-    position: absolute;
-
-
-    bottom: -25px;
-    border-radius: 50%;
-    border:20px solid white;
-    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
-    opacity: 1;
   
 }
 
@@ -2488,20 +2543,7 @@ font-size: 20px;
 }
 
 
-.sideLine2Mob
-{
-    position: absolute;
-    right: 0px;
-    transform: rotatex(180deg);
-    transform-origin: left;
-    margin-right:50%;
-    margin-top:48%;
-    width: 350px;
-    border-bottom:5px solid white;
-    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
 
-   
-}
 .sideLine2.animated
 {
    
@@ -2519,16 +2561,6 @@ font-size: 20px;
    
 }
 
-.sideLine2UpMob
-{
-    position: absolute;
-  /*s*/
- 
-    width: 100px;
-    border-left:5px solid white;
-    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
-   
-}
 
 .sideLine2Up.animated
 {
@@ -2549,19 +2581,7 @@ font-size: 20px;
   
 }
 
-.sideLine2CircleMob
-{
-    position: absolute;
 
-       right: 100px;
-    bottom: -25px;
-    border-radius: 50%;
-    border:20px solid white;
-    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
-    opacity: 1;
-    
-  
-}
 .sideLine2Circle.animated
 {
   
@@ -2583,17 +2603,6 @@ font-size: 20px;
   
 }
 
-.sideLine3Mob
-{
-    position: absolute;
-    margin-left:50%;
-    margin-top:65%;
-    width: 300px;
-    border-bottom:5px solid white;
-    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
-    
-  
-}
 .sideLine3.animated
 {
    
@@ -2618,21 +2627,6 @@ box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px 
     
 }
 
-.sideLine3CircleMob
-{
-    position: absolute;
-
-    margin-left: 100%;
-    margin-top: -5%;
-
-    border-radius: 50%;
-    border:20px solid white;
-box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 15px #befbff, 0 0 20px #befbff, 0 0 25px #befbff;
- 
-    opacity: 1;
-    
-    
-}
 
 .sideLine3Circle.animated
 {
@@ -3792,11 +3786,6 @@ footer {
   }
 
 
-  #placeHolderSpacingMobile
-  {
-    display: none;
-  }
-
 /*---------------------------------------
    Responsive Mobile         
 -----------------------------------------*/
@@ -4109,7 +4098,10 @@ footer {
 
 
 @media only screen and (max-width: 767px) {
-
+#placeHolder
+{
+  height:0px;
+} 
     .centerList
     {
       display: none !important;
@@ -4140,10 +4132,6 @@ footer {
   }
 
 
-  #placeHolderSpacingMobile
-  {
-    display: block;
-  }
 
 }
 @media only screen and (max-width: 750px) {
@@ -4331,6 +4319,18 @@ footer {
   }
 
 
+   .appsHolder
+  {
+    display: none;
+  }
+
+  .mobileAppsHolder
+  {
+    display: block;
+  }
+
+
+
 
 }
 
@@ -4376,7 +4376,7 @@ footer {
 
 @media (max-width: 620px) {
 
- 
+
 
    .appsHolder
   {
@@ -4387,216 +4387,6 @@ footer {
   {
     display: block;
   }
-
-
-  .middleCircle
-  {
-    z-index: 20;
-    display: block;
-    position: absolute;
-    height: 400px;
- 
-    background-color: transparent;
-    width: 400px;
-    opacity: 0;
-    left: -10%;
-    top: -10%;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: inset 0 0 8px 2px #fff, 0 0 10px 1px #fff, inset 0 0 20px 4px #befbff, 0 0 20px 3px #befbff;
-    transition: 1s linear;
-
-  }
-
-  .middleCircle.upOpa
-  {
-  
-    opacity: 1; 
-    transition-delay: 5s;
-    transition: 1s 4s linear;
-
-  }
-  
- .middleCircleBack
-{
-
-     z-index: 0;
-    opacity: 0;
-    color: #000;
-    display: block;
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    margin: -75px 10px 10px -85px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-color: rgb(66, 188, 244) transparent;
-  /*  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #befbff, 0 0 8px #befbff, 0 0 10px #befbff, 0 0 12px #befbff, 0 0 14px #befbff;*/
-    transition: all .3s ease-in-out;
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
-
-      -webkit-transition: opacity 1s ease-in;
-        -moz-transition: opacity 1s ease-in;
-        -ms-transition: opacity 1s ease-in;
-        -o-transition: opacity 1s ease-in;
-        transition: opacity 1s ease-in;
-  
-}
-
-  
- .middleCircleBack.upOpa
-{ 
-
-    opacity: 1; 
-
-    transition: 1s 3s linear;
-
-}
-
-
-
-  .middleCircleBack:before {
-    content: "";
-    position: absolute;
-    display: block !important;
-        z-index: -1;
-    top: 5px  !important;
-    left: 5px  !important;
-    right: 5px  !important;
-    bottom: 5px  !important;
-
-    border-radius: 50%;
-    border: 3px solid transparent;
-
-  border-color: rgb(255, 255, 255) transparent;
-/*   box-shadow: 0 0 1px #fff,
-    0 0 2px #fff,
-    0 0 4px #fff,
-    0 0 6px  #befbff,
-    0 0 8px #befbff,
-    0 0 10px  #befbff,
-    0 0 12px  #befbff,
-    0 0 14px  #befbff;*/
-     -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-}
-
-.middleLine2
-{
-
-
-    
-
-  position: absolute;
-  height: 0px;
-  bottom: 119%;
-  
-  margin-left: 47%;
-  border-left:5px solid white;
- 
-  box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 4px #fff, 0 0 20px #befbff, 0 0 25px #befbff, 0 0 30px #befbff, 0 0 35px #befbff, 0 0 40px #befbff;
-
-  transform:scale(0.5, -0.5);
-  transform-origin: bottom;
-
- 
-}
-
-.middleLine2.animated
-{
-
-    height: 0px;
-   animation: increaseDownYon 1.6s 2s linear forwards;
-}
-
-@keyframes increaseDownYon {
-  0%{
-    height: 0px;
-  }
-    100% {
-    height: 800px;
-    }
-}
-
-.middlecircleImg2
-{
-
-    opacity: 0;
-    /* z-index: 100; */
-    position: relative;
-    height: 300px;
-    width: 300px;
-    display: block;
-    /* margin-right: 100px; */
-    left: -1%;
-    /* margin-lefT: 100px; */
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-size: contain;
-  
-    background-size: 100%;
-
-    transition: transform 500ms ease-in-out, opacity 1s 4s ease-in-out;
-  
-}
-
-.middlecircleImg2.upOpa
-{
-
-    opacity: 1;
-
-
-    transition: transform 500ms ease-in-out, opacity 1s 4s ease-in-out;
-}
-.CarousellHolder
-{
-
-  position: relative;
-    /* top: 550%; */
-    left: 5;
-    left: 20%;
-    height: 500px;
-    /* bottom: 50%; */
-    margin-top: 37%;
-}
-
-
-.buttonCarousell
-{
-        width: 150px;
-    height: 100px;
-    /* left: 50%; */
-    /* margin-left: 15%; */
-    right: 36%;
-    position: absolute;
-    top: 75%;
-}
-
-.rightArrow
-{
-  float:right;
-}
-
-
-.leftArrow
-{
-  float:left;
-}
-
-#lefty
-{
-   font-size:48px;
-   color:rgb(66, 188, 244);
-
-}
-
-#righty
-{
-   font-size:48px;
-   color:rgb(66, 188, 244);
-
-}
 
 
 

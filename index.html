@@ -32,6 +32,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
+   <link rel="stylesheet" href="css/flickity.css" media="screen">
   <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/component.css">
 
@@ -244,25 +245,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   		</div>
   	</div>
 
-  	<div class = "spacing" id = "placeHolderSpacingMobile">
-  		<div class = "middleLineMob">
-  		</div>
-  		<div class = "sideLine1Mob">
-  			<div class = "sideLine1DownMob">
-  				<div class ="sideLine1CircleMob">
-  				</div>
-  			</div>
-  		</div>
-  		<div class = "sideLine2Mob">
-  			<div class = "sideLine2UpMob">
-  				<div class ="sideLine2CircleMob"></div>
-  			</div>
-  		</div>
-
-  		<div class = "sideLine3Mob">
-  				<div class ="sideLine3CircleMob"></div>
-  		</div>
-  	</div>
+ 
   </div>
 
 </div>
@@ -399,43 +382,77 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 
 		<div class ="mobileAppsHolder">
-	  		<div class = "middleLine2">
-		  		</div>
-		<a class = "carousellA"href = "https://play.google.com/store/apps/details?id=com.Klausology.VinnysOrigin&hl=en"  target="_blank">
-			<div class = "CarousellHolder">
-
-				
-				<div class = "middlecircleImg">
-					
-					<div class = "middleCircle">
-					</div>
-					
-					<div class = "middleCircleBack">
-					</div>
-
-							<div class = "middlecircleImg2" id = "middleCircleImg2ID">
-							</div>
-				
-
-				</div>
-
-			</div>
-		</a>
+			  		
+			<div class="gallery js-flickity"  data-flickity-options='{ "autoPlay": "false"}'>
 
 
-					<div class = "buttonCarousell">
-						<div class = "rightArrow">
-							<i class="fa fa-angle-double-right" id = "righty"></i>
-						</div>
+			<div class="gallery-cell"><img src="images/originApp2.png">
+			<a href = "https://play.google.com/store/apps/details?id=com.Klausology.VinnysOrigin" target="_blank">
+			<h2 id = mobileIconTitle>Vinny's</br>Origin</h2>
+			<h4 id = downloadNowMobile>Download now!</h4></a></div>
 
-					
-						<div class = "leftArrow">
+		 
+		  	<div class="gallery-cell"><img src="images/betterIcon.png">
+		  	 <a href = "https://play.google.com/store/apps/details?id=com.Klausology.ABetterChoice" target="_blank">
+		  	 	<h2 id = mobileIconTitle>A Better</br>Choice</h2>
+			<h4 id = downloadNowMobile>Download now!</h4>
 
 
-							<i class="fa fa-angle-double-left" id = "lefty"></i>
-						</div>
+		  	 </a>
+		  	 </div>
+		 
+		  	<div class="gallery-cell"><img src="images/babyIcon.png">
+		  	 <a href = "https://play.google.com/store/apps/details?id=com.Klausology.BabyHero" target="_blank">
+		  	 		  	 	<h2 id = mobileIconTitle>Baby</br>Hero</h2>
+			<h4 id = downloadNowMobile>Download now!</h4>
+		  	 </a>
+		  	 </div>
+		 
+		  	<div class="gallery-cell"><img src="images/glidyIcon.png">
+		  	 <a href = "https://play.google.com/store/apps/details?id=com.Klausology.GlidyVinny" target="_blank">
+		  	 		  	 	<h2 id = mobileIconTitle>Glidy</br>Vinny</h2>
+			<h4 id = downloadNowMobile>Download now!</h4>
+		  	 </a>
+		  	</div>
+		 
+		  	<div class="gallery-cell"><img src="images/launchyIcon.png">
+		  	 <a href = "https://play.google.com/store/apps/details?id=com.Klausology.LaunchyVinny" target="_blank">
+		  	 		  	 	<h2 id = mobileIconTitle>Launchy</br>Vinny</h2>
+			<h4 id = downloadNowMobile>Download now!</h4>
+		  	 </a>
+		  	 </div>
+		 
+		  	<div class="gallery-cell"><img src="images/spinnyIcon.png">
+		  	 <a href = "https://play.google.com/store/apps/details?id=com.Klausology.SpinyVinny" target="_blank">
+		  	 		  	 	<h2 id = mobileIconTitle>Spinny</br>Vinny</h2>
+			<h4 id = downloadNowMobile>Download now!</h4>
+		  	 </a>
+		  	 </div>
+
+		  	<div class="gallery-cell"><img src="images/jumpyIcon.png">
+		  	<a href = "https://play.google.com/store/apps/details?id=com.klausology.JumpyVinny" target="_blank">
+		  			  	 	<h2 id = mobileIconTitle>Jumpy</br>Vinny</h2>
+			<h4 id = downloadNowMobile>Download now!</h4>
+		  	</a>
+		  	</div>
+
+		  	<div class="gallery-cell"><img src="images/singlishIcon.png">
+		  	<a href = "https://play.google.com/store/apps/details?id=com.klausology.singlishstickerapp" target="_blank">
+		  			  	 	<h2 id = mobileIconTitle>Singlish</br>Sticker</h2>
+			<h4 id = downloadNowMobile>Download now!</h4>
+		  	</a>
+		  </div>
 		
-					</div>
+		  	<div class="gallery-cell"><img src="images/stickervIcon.png">
+		  	  <a href = "https://play.google.com/store/apps/details?id=com.klausology.vinnyandfinnysticker" target="_blank">
+		  	  		  	 	<h2 id = mobileIconTitle>Finny</br>Sticker</h2>
+			<h4 id = downloadNowMobile>Download now!</h4>
+		  	  </a>
+		  	</div>
+		</div>
+
+
+
 		</div>
 	</div>
 </section>
@@ -496,7 +513,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <!-- Javascript  -->
 
 
-<script src="js/particles.js"></script>
 
 
 <script src="js/bootstrap.min.js"></script>
@@ -508,7 +524,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
 
-
+<script src="js/flickity.pkgd.min.js"></script>
  
 
 

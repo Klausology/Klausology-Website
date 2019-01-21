@@ -226,172 +226,6 @@ anime.timeline({loop: false})
 
 $(document).ready(function() {
 
-
-var flipCirc;
-var degreeSU = 0;
- var interval2 = 2000;
- var decreasingSU;
- var changingAngleUp, changingAngleDown;
- // pic1 = $('middleCircleImg2ID').css('background-image', 'url(' + (../images/originAppCirc.png) + ')');
- // pic2 = $('middleCircleImg2ID').css('background-image', 'url(' + (../images/launchyApp2.png) + ')');
-
-
-$(".rightArrow").click(addDeg);
-function addDeg()
-{
-    changingAngleUp = true;
-    changingAngleDown - false;
-}
-
-$(".leftArrow").click(minusDeg);
-function minusDeg()
-{
-    changingAngleUp = false;
-    changingAngleDown - true;
-}
-
- flipCirc = setInterval ( () => {
-              document.getElementById("middleCircleImg2ID").style.transform = 
-               'rotateY('+ degreeSU +'deg)';
-
-              
-               console.log(degreeSU);
-              //we use the ES6 template literal to insert the variable "position"
-
-
-              if(decreasingSU)
-              {
-                  if(degreeSU === 0)
-                  {
-                    decreasingSU = false;
-
-                   
-                   if(!changingAngleDown && !changingAngleUp)
-                    {
-                      degreeSU += 180;
-                    }
-                    else if(changingAngleUp)
-                    {
-                      degreeSU += 180;
-                    }
-                    else
-                    {
-                      degreeSU = 1440;
-                    }
-                  
-                  }
-                  else
-                  {
-                    if(!changingAngleDown && !changingAngleUp)
-                    {
-                        degreeSU -= 180;
-                    }     
-                    else if(changingAngleUp)
-                    {
-                      degreeSU += 180;
-                    }
-                    else
-                    {
-                       degreeSU -= 180;
-                    }
-
-                   
-                  }
-              }
-              else
-              {
-                  if(degreeSU === 1440)
-                  {
-                    decreasingSU = true;
-                     
-                       if(!changingAngleDown && !changingAngleUp)
-                      {
-                        degreeSU -= 180;
-                      }
-                      else if(changingAngleUp)
-                      {
-                        degreeSU = 0;
-                      }
-                      else
-                      {
-                         degreeSU -= 180;
-                      }
-                  }
-                  else
-                  {
-                      if(!changingAngleDown && !changingAngleUp)
-                      {
-                        degreeSU += 180;
-                      }
-                      else if(changingAngleUp)
-                      {
-                        degreeSU += 180;
-                      }
-                      else
-                      {
-                         degreeSU -= 180;
-                      }
-                  }
-                  
-              }
-
-
-console.log(degreeSU);
-
-              if(degreeSU === 0)
-              {
-                $('#middleCircleImg2ID').css("background-image", "url('images/originAppCirc.png')");
-                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.VinnysOrigin");
-              }
-              else  if(degreeSU === 180)
-              {
-                $('#middleCircleImg2ID').css("background-image", "url('images/glidyApp2.png')");
-                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.GlidyVinny");
-
-              }
-               else  if(degreeSU === 360)
-              {
-                $('#middleCircleImg2ID').css("background-image", "url('images/spinnyApp2.png')");
-                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.SpinyVinny");
-              }
-               else  if(degreeSU === 540)
-              {
-                $('#middleCircleImg2ID').css("background-image", "url('images/launchyApp2.png')");
-                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.LaunchyVinny");
-              }
-               else  if(degreeSU === 720)
-              {
-                $('#middleCircleImg2ID').css("background-image", "url('images/jumpyApp2.png')");
-                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.klausology.JumpyVinny");
-              }
-               else  if(degreeSU === 900)
-              {
-                $('#middleCircleImg2ID').css("background-image", "url('images/babyApp2.png')");
-                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.BabyHero");
-              }
-               else  if(degreeSU === 1080)
-              {
-                $('#middleCircleImg2ID').css("background-image", "url('images/betterApp2.png')");
-                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.Klausology.ABetterChoice");
-              }
-               else  if(degreeSU === 1260)
-              {
-                $('#middleCircleImg2ID').css("background-image", "url('images/singlishApp2.png')");
-                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.klausology.singlishstickerapp");
-              }
-              else
-              {
-                 $('#middleCircleImg2ID').css("background-image", "url('images/stickervApp2.png')");
-                $(".carousellA").prop("href", "https://play.google.com/store/apps/details?id=com.klausology.vinnyandfinnysticker");
-
-              }
-              //reset the position to 256px, once position exceeds 1536px
-              }
-              , interval2 ); //end of setInterval
-               //end of animateScript()
-       
-
-
 var triggerOnce;
 var beginWalkieWalkie = false;
 var tID; //we will use this variable to clear the setInterval()
@@ -815,11 +649,8 @@ $(document).on('mousemove', (event) => {
 
 
                         
-          $('.middleCircle').addClass('upOpa');
-          $('.middlecircleImg2').addClass('upOpa');
-          $('.middleCircleBack').addClass('upOpa');
-          $('.middleLine2').addClass('animated');
-  
+         
+         
 
                          $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 49
@@ -946,19 +777,14 @@ console.log("direction = " + direction + ", i = " + i);
             $('.StickervApp').addClass('animated');
             $('.stickervAppImgContainer').addClass('showImg');
 
-          $('.middleCircle').addClass('upOpa');
-          $('.middlecircleImg2').addClass('upOpa');
-          $('.middleCircleBack').addClass('upOpa');
-          $('.middleLine2').addClass('animated');
-
-  
+    
           if(direction === "up")
           {
               if(i >= 0 && i < a.length)
               {
                 $('html,body').animate({
                   scrollTop: a[2].offsetTop
-                }, 5000, 'swing'
+                }, 500, 'easeOutExpo'
                 );
 
               }
@@ -969,7 +795,7 @@ console.log("direction = " + direction + ", i = " + i);
               {
                 $('html,body').animate({
                   scrollTop: a[0].offsetTop
-                }, 2000, 'easeOutExpo'
+                }, 500, 'easeOutExpo'
                 );
               }
             }
@@ -979,7 +805,7 @@ console.log("direction = " + direction + ", i = " + i);
     if(i >= 0 && i < a.length) {
       $('html,body').animate({
         scrollTop: a[i].offsetTop
-      }, 1000, 'easeInOutExpo'
+      }, 500, 'easeInOutExpo'
       );
     }
 
@@ -1076,12 +902,8 @@ else
             $('.StickervApp').addClass('animated');
             $('.stickervAppImgContainer').addClass('showImg');
 
-            
-          $('.middleCircle').addClass('upOpa');
-          $('.middlecircleImg2').addClass('upOpa');
-          $('.middleCircleBack').addClass('upOpa');
-          $('.middleLine2').addClass('animated');
-
+      
+    
           if(wd < 0)
           {
               if(i >= 0 && i < a.length)
