@@ -64,7 +64,7 @@ http://www.templatemo.com/tm-493-snapshot
 
 .gallery-cell {
  
-  background: black;
+  background: transparent;
   counter-increment: gallery-cell;
    width: 50%; /* half-width */
   height: 450px;

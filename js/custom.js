@@ -703,13 +703,13 @@ if(is_touch_device())
          
 
           var a= document.getElementsByTagName('section');
-          if(direction === 'left' || direction === 'up') {
+          if(direction === 'up') {
             for(var i = 0 ; i < a.length ; i++) {
               var t = a[i].getClientRects()[0].top;
               if(t >= 40) break;
             }
           }
-          else {
+          else if(direction === 'down'){
             for(var i = a.length-1 ; i >= 0 ; i--) {
               var t = a[i].getClientRects()[0].top;
               if(t < -20) break;
