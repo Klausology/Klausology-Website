@@ -143,11 +143,18 @@ $(window).load(function(){
       obj.el.classList.add('finished');
     });
 
-    new Vivus('Layer_2', {
+ new Vivus('Layer_2', {
       
-      duration: 20
 
-    }, function (obj) {
+      duration: 20,
+         
+      onReady: function (obj) {
+      obj.el.style.opacity = 1;
+    }
+
+    },
+
+      function (obj) {
       obj.el.classList.add('finished');
     });
 
