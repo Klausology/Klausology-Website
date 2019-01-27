@@ -18,12 +18,12 @@ $(window).load(function(){
   $('#gameyMonth2').addClass('top-of-page');
 
 
-  span = document.getElementById("middleName");
+  // span = document.getElementById("middleName");
 
-  setTimeout(function()
-  { 
-      span.style.opacity = 1;
-  },100);
+  // setTimeout(function()
+  // { 
+  //     span.style.opacity = 1;
+  // },100);
 
 
     new Vivus('Layer_2', {
@@ -65,6 +65,77 @@ $(window).load(function(){
 
 
 
+ $(window).on("debouncedresize", function( event )
+  {
+      updateParallax(); 
+  });
+
+    updateParallax(); 
+
+    function updateParallax() 
+    {
+      
+      var viewport_width = $(window).width();
+      var layers = my_parallax.layers;
+          
+      for (var j = 0; j<layers.length; j++) 
+      {
+           var layer = layers.item(j);
+           var deskDepth = layer.getAttribute("data-depth-desk");
+           var mobileDepth = layer.getAttribute("data-depth-mobile");
+           
+           if(viewport_width <= 650)
+           {
+               var sceney = document.getElementById("scene");
+              var homey = document.getElementById("home");
+              var badgesMob = document.getElementById("BadgesMob");
+
+              if(my_parallax != null)
+              {
+                 my_parallax.disable();
+              }
+             
+             
+             
+              
+           
+              homey.style.backgroundSize = "100%";
+              homey.style.backgroundRepeat = "no-repeat";
+              sceney.style.display = "none";
+              badgesMob.style.display = "block";
+           }
+           else
+           {
+              var sceney = document.getElementById("scene");
+            var badgesMob = document.getElementById("BadgesMob");
+             
+
+              sceney.style.display = "block";
+               badgesMob.style.display = "none";
+              my_parallax.enable();
+
+           }
+
+
+           if(viewport_width < 768) {
+               if(layer.hasAttribute("data-depth-mobile")) {
+                   layer.setAttribute("data-depth", mobileDepth);
+               }
+           }
+           else {
+               if(layer.hasAttribute("data-depth-desk")) {
+                   layer.setAttribute("data-depth", deskDepth);
+               }
+           }
+
+
+       }
+       my_parallax.updateLayers();
+    }
+       
+
+
+
 });
 
 function is_touch_device() {
@@ -103,6 +174,29 @@ $(document).ready(function() {
             event.preventDefault();
         });
     });
+
+
+        $(function() {
+        $('.Badges a').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 139
+            }, 1000);
+            event.preventDefault();
+        });
+    });
+
+         $(function() {
+        $('.BadgesMobClass a').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 139
+            }, 1000);
+            event.preventDefault();
+        });
+    });
+
+
 
   $(document).ready(function() {
  
@@ -156,7 +250,7 @@ $(document).ready(function() {
         if(i >= 0 && i < a.length) 
         {
           $('html,body').animate({
-            scrollTop: a[i].offsetTop
+            scrollTop: a[i].offsetTop - 49
           }, 500, 'easeInOutExpo'
           );
         }
@@ -180,8 +274,10 @@ $(document).ready(function() {
             var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 
             var a= document.getElementsByTagName('section');
-            if(wd < 0) {
-              for(var i = 0 ; i < a.length ; i++) {
+            if(wd < 0) 
+            {
+              for(var i = 0 ; i < a.length ; i++) 
+              {
                 var t = a[i].getClientRects()[0].top;
                 if(t >= 40) break;
               }
@@ -195,13 +291,15 @@ $(document).ready(function() {
             
 
 
-            if(i >= 0 && i < a.length)
-            {
-              $('html,body').animate({
-                scrollTop: a[i].offsetTop
-              }, 1000, 'easeInOutExpo'
-              );
-            }
+              if(i >= 0 && i < a.length)
+              {
+                $('html,body').animate({
+                  scrollTop: a[i].offsetTop
+                }, 500, 'easeOutExpo'
+                );
+
+              }
+
         });
 
     }

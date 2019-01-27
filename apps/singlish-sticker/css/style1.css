@@ -5,7 +5,10 @@ http://www.templatemo.com/tm-493-snapshot
 
 */
 
-
+@font-face {
+  font-family: 'KBJellybeantic';
+  src: url('../../../fonts/KBJellybean.ttf')  format('opentype');
+}
 /* Body 
 ------------------------------------- */
 body {
@@ -545,7 +548,10 @@ a:hover, a:active, a:focus {
   -webkit-transform: rotate(-45deg);
 }
 
-
+#home, #whatsapp, #telegram, #line
+{
+  height: 100vh;
+}
 /*---------------------------------------
     Home Section              
 -----------------------------------------*/
@@ -562,7 +568,7 @@ a:hover, a:active, a:focus {
         align-items: center;
   height: 100vh;
   text-align: center;
-   background: linear-gradient(#ccf5ff, #439ffe);
+   background: linear-gradient(#fbf5d5, #ffbfb9);
 
 }
 
@@ -580,140 +586,190 @@ a:hover, a:active, a:focus {
     transform: translateX(-50%) scale(1, 1) !important;
 }
 
+#waImg, #teleImg, #lineImg
+{
+  width:25%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+ float: left;
+   margin-right: 5%;
+ 
+}
 
+.Badges
+{
+ /* transform: translate3d(645px, 250px, 0px);*/
+ transform: translate(57%, 50px);
+}
+
+.TitleSinglishSticker
+{
+      transform: translate(155%, -100px);
+    font-family: 'KBJellybean',serif;
+    font-size: 4em;
+   color: #fb3d39;
+    font-weight: bolder;
+    /* -webkit-text-stroke: 2px white; */
+    -webkit-text-fill-color: #fb3d39;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+.TitleSinglishStickerByWhom
+{
+      transform: translate(155%, -100px);
+    font-style: italic;
+    font-size: 2em;
+    text-align: right;
+color: #fb3d39;
+    font-weight: bolder;
+    /* -webkit-text-stroke: 2px white; */
+    -webkit-text-fill-color: #fb3d39;
+    
+}
+
+
+.CNYVinny1
+{
+      transform: translate(80%, 270px);
+}
+.CNYVinny2
+{
+      transform: translate(280%, 300px);
+}
+
+.SGVinny1
+{
+          transform: translate(380%, 280px);
+}
+
+.SGVinny2
+{
+         transform: translate(350%, -250px);
+}
+
+.SGVinny3
+{
+      transform: translate(-10%, -250px);
+}
 /*---------------------------------------
-    About Section              
+    Whatsapp Section              
 -----------------------------------------*/
+#whatsapp
+{
+    background: linear-gradient(#ffbfb9, #fbf5d5);
 
-#about {
-  background: #f0f0f0;
 }
 
-#about .item {
-  width: 100%;
-  display: block;
+.waContainer, .telContainer, .lineContainer
+{
+  height: 100vh;
 }
 
-#about .about-thumb {
-  background: #ffffff;
-  border-radius: 4px;
-  padding: 100px;
+.ImageStarterPack
+{
+  margin-top: 15%;
+
+}
+
+ .telContainer, .lineContainer
+{
+  margin-top: 5%;
+
+}
+
+.SinglishImgWa, .CNYImgWa, .Singlish2ImgWa
+{
+  width:25%;
+  height: auto;
   position: relative;
+  z-index: 1;
+ float: left;
+   margin-right: 5%;
+ 
 }
 
-#about .about-img img {
-  border: 8px solid #ffffff;
-  position: absolute;
-  left: -120px;
-  bottom: -325px;
-  padding: 12px;
+.ImgWaHolder
+{
+  transform: translateX(5%);
+    margin-bottom: 30px;
+    height: 250px;
 }
 
-#about .team-thumb {
-  width: 100%;
-  height: 400px;
-  margin: 32px 0;
+.CNYpackTitle, .DownloadNow
+{
+  margin-top: 30px;
   text-align: center;
-  background: #ffffff;
-  border-radius: 4px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+   font-family: 'KBJellybean',serif;
+    font-size: 2.5em;
+    font-weight: bolder;
+    -webkit-text-fill-color: #fb3d39;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
-#about .team-thumb .image-holder {
-  position: relative;
-  top: 40px;
-  display: inline-block;
-  margin-bottom: 40px;
-  padding: 10px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.WhatsAppLogo
+{
+  width: 15%;
+  height: auto;
+  margin-top: 20px;
 }
-
-#about .team-thumb .heading {
-  font-weight: bold;
-  position: relative;
-  top: 10px;
-  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-#about .team-thumb:hover {
-  background: #304352;
-}
-
-#about .team-thumb:hover .image-holder {
-  top: -40px;
-  margin-bottom: 0px;
-}
-
-#about .team-thumb:hover .heading {
-  top: -10px;
-}
-
-#about .team-thumb .description {
-  font-size: 18px;
-  width: 80%;
-  margin: 0 auto;
-  opacity: 0;
-  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-}
-
-#about .team-thumb:hover .description {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-#about .team-thumb:hover p.description {
-  color: #ffffff;
-}
-
-
-
 /*---------------------------------------
     Galllery section              
 -----------------------------------------*/
 
-#gallery {
-  background: #ffffff;
+.grid li {
+    height: 100vh;
 }
 
-#gallery .gallery-thumb {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
-  cursor: pointer;
-  display: block;
-  margin-bottom: 25px;
-  position: relative;
-  top: 0px;
-  transition: all 0.4s ease-in-out;
+
+#telegram
+{
+    background: linear-gradient(#fbf5d5, #ffbfb9);
+
 }
 
-#gallery .gallery-thumb:hover {
-  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-  top: -5px;
+
+.SinglishImgTel, .CNYImgTel
+{
+  width:75%;
+  height: auto;
+
+ 
+}
+.TelegramLogo
+{
+  width: 25%;
+  height: auto;
+  margin-top: 50px;
 }
 
-#gallery .gallery-thumb img {
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  width: 100%;
+
+
+#line
+{
+    background: linear-gradient(#ffbfb9, #fbf5d5);
 }
 
+.SinglishImgLine, .CNYImgLine
+{
+  width:75%;
+  height: auto;
+
+ 
+}
+.LineLogo
+{
+  width: 25%;
+  height: auto;
+  margin-top: 50px;
+}
 
 
 /*---------------------------------------
     Contact section              
 -----------------------------------------*/
 
-#contact, footer {
-  background: #304352;
+#contact{
+  background: linear-gradient(#ff8374, #f9d29c);
   color: #ffffff;
 }
 
@@ -833,6 +889,174 @@ footer {
    Responsive Mobile         
 -----------------------------------------*/
 
+@media only screen and (max-width: 2000px) {
+
+    .scene
+    {
+      transform: translateX(-45%) scale(0.9, 0.9) !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 1567px) {
+
+    .scene
+    {
+      transform: translateX(-42%) scale(0.85, 0.85) !important;
+    }
+
+}
+
+@media only screen and (max-width: 1465px) {
+
+    .scene
+    {
+      transform: translateX(-39%) scale(0.8, 0.8) !important;
+    }
+
+}
+
+@media only screen and (max-width: 1379px) {
+
+    .scene
+    {
+      transform: translateX(-34%) scale(0.75, 0.75) !important;
+    }
+
+}
+@media only screen and (max-width: 1311px) {
+
+    .scene
+    {
+      transform: translateX(-35%) scale(0.7, 0.7) !important;
+    }
+
+}
+@media only screen and (max-width: 1219px) {
+
+    .scene
+    {
+      transform: translateX(-30%) scale(0.65, 0.65) !important;
+    }
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .scene
+    {
+      transform: translateX(-35%) scale(0.6, 0.6) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(75%, 50px) scale(1.5, 1.5) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(80%, 400px);
+    }
+    .SGVinny3
+    {
+          transform: translate(-10%, -450px);
+    }
+
+}
+@media only screen and (max-width: 1137px) {
+
+    .scene
+    {
+      transform: translateX(-35%) scale(0.6, 0.6) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(75%, 50px) scale(1.5, 1.5) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(80%, 400px);
+    }
+    .SGVinny3
+    {
+          transform: translate(-10%, -450px);
+    }
+    .SGVinny1
+    {
+          transform: translate(330%, 380px);
+    }
+
+}
+
+@media only screen and (max-width: 998px) {
+
+    .scene
+    {
+      transform: translateX(-35%) scale(0.6, 0.6) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(75%, 50px) scale(1.5, 1.5) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(80%, 400px);
+    }
+    .SGVinny3
+    {
+          transform: translate(-10%, -450px);
+    }
+    .SGVinny1
+    {
+          transform: translate(330%, 380px);
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .scene
+    {
+      transform: translateX(-35%) scale(0.55, 0.55) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(80%, 50px) scale(2, 2) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(60%, 400px);
+    }
+    .SGVinny3
+    {
+          transform: translate(-30%, -450px);
+    }
+    .SGVinny1
+    {
+          transform: translate(230%, 380px);
+    }
+    .SGVinny2
+{
+         transform: translate(250%, -450px);
+}
+
+
+.ImgWaHolder
+{
+  transform: translateX(5%);
+    margin-bottom: 30px;
+    height: 150px;
+}
+
+
+}
 @media (max-width: 980px) {
 /* 
   #home, .overlay {
@@ -844,7 +1068,6 @@ footer {
   }
 
 }
-
 
 @media (max-width: 767px) {
 
@@ -867,6 +1090,806 @@ footer {
 }
 
 
+@media only screen and (max-width: 953px) {
+
+    .scene
+    {
+      transform: translateX(-35%) scale(0.55, 0.55) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(80%, 50px) scale(2, 2) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(60%, 400px);
+    }
+    .SGVinny3
+    {
+          transform: translate(-20%, -450px);
+    }
+    .SGVinny1
+    {
+          transform: translate(230%, 380px);
+    }
+    .SGVinny2
+    {
+             transform: translate(250%, -450px);
+    }
+
+}
+@media only screen and (max-width: 874px) {
+
+    .scene
+    {
+      transform: translateX(-35%) scale(0.55, 0.55) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(80%, 50px) scale(2, 2) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(60%, 400px);
+    }
+    .SGVinny3
+    {
+          transform: translate(-0%, -450px);
+    }
+    .SGVinny1
+    {
+          transform: translate(230%, 380px);
+    }
+    .SGVinny2
+    {
+             transform: translate(250%, -450px);
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .scene
+    {
+      transform: translateX(-28%) scale(1, 1) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(45%, 100px) scale(1.8, 1.8) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(-20%, 300px) scale(0.8);
+    }
+    .SGVinny3
+    {
+          transform: translate(-25%, -300px) scale(0.8);
+    }
+    .SGVinny1
+    {
+          transform: translate(70%, 300px) scale(0.65);
+    }
+    .SGVinny2
+    {
+             transform: translate(70%, -250px) scale(0.8);
+    }
+
+    .TitleSinglishSticker
+    {
+          transform: translate(75%, 30px);
+        font-family: 'KBJellybean',serif;
+        font-size: 2em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhom
+    {
+          transform: translate(75%, 30px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+    .ImgWaHolder
+{
+    transform: translate(5%, 50%);
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+}
+
+@media only screen and (max-width: 749px) {
+
+    .scene
+    {
+      transform: translateX(-28%) scale(1, 1) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(45%, 100px) scale(1.8, 1.8) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(-20%, 300px) scale(0.8);
+    }
+    .SGVinny3
+    {
+          transform: translate(-25%, -300px) scale(0.7);
+    }
+    .SGVinny1
+    {
+          transform: translate(70%, 250px) scale(0.7);
+    }
+    .SGVinny2
+    {
+             transform: translate(70%, -250px) scale(0.8);
+    }
+
+    .TitleSinglishSticker
+    {
+          transform: translate(75%, 30px);
+        font-family: 'KBJellybean',serif;
+        font-size: 2em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhom
+    {
+          transform: translate(75%, 30px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+        .ImgWaHolder
+{
+    transform: translate(5%,0%);
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+
+}
+
+@media only screen and (max-width: 720px) {
+
+    .scene
+    {
+      transform: translateX(-28%) scale(1, 1) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(45%, 100px) scale(1.7, 1.7) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(-20%, 300px) scale(0.7);
+    }
+    .SGVinny3
+    {
+          transform: translate(-25%, -300px) scale(0.6);
+    }
+    .SGVinny1
+    {
+          transform: translate(70%, 280px) scale(0.8);
+    }
+    .SGVinny2
+    {
+             transform: translate(70%, -250px) scale(0.8);
+    }
+
+    .TitleSinglishSticker
+    {
+          transform: translate(75%, 30px);
+        font-family: 'KBJellybean',serif;
+        font-size: 2em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhom
+    {
+          transform: translate(75%, 30px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+
+}
+
+@media only screen and (max-width: 699px) {
+
+    .scene
+    {
+      transform: translateX(-28%) scale(1, 1) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(42%, 100px) scale(1.7, 1.7) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(-10%, 300px) scale(0.6);
+    }
+    .SGVinny3
+    {
+          transform: translate(-15%, -300px) scale(0.6);
+    }
+    .SGVinny1
+    {
+          transform: translate(70%, 200px) scale(0.65);
+    }
+    .SGVinny2
+    {
+             transform: translate(70%, -250px) scale(0.8);
+    }
+
+    .TitleSinglishSticker
+    {
+          transform: translate(75%, 30px);
+        font-family: 'KBJellybean',serif;
+        font-size: 2em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhom
+    {
+          transform: translate(75%, 30px);
+        font-style: italic;
+        font-size:  1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+
+
+}
+@media only screen and (max-width: 667px) {
+
+    .scene
+    {
+      transform: translateX(-28%) scale(1, 1) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(40%, 100px) scale(1.6, 1.6) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(-10%, 300px) scale(0.6);
+    }
+    .SGVinny3
+    {
+          transform: translate(-15%, -300px) scale(0.6);
+    }
+    .SGVinny1
+    {
+          transform: translate(70%, 200px) scale(0.65);
+    }
+    .SGVinny2
+    {
+             transform: translate(60%, -250px) scale(0.6);
+    }
+
+    .TitleSinglishSticker
+    {
+          transform: translate(75%, 30px);
+        font-family: 'KBJellybean',serif;
+        font-size: 2em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhom
+    {
+          transform: translate(75%, 30px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+     #waImg, #teleImg, #lineImg
+    {
+      width:25%;
+      height: auto;
+     
+      z-index: 1;
+      float: none;
+       margin-right: 5%;
+       margin-bottom: 5%
+     
+    }
+    #BadgesMob
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(5%, 0px) scale(1.6, 1.6) !important;
+    }   
+
+    .TitleSinglishStickerMob
+    {
+          transform: translate(-2%, 0px);
+        font-family: 'KBJellybean',serif;
+        font-size: 1.5em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhomMob
+    {
+          transform: translate(-25%, 0px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+
+}
+
+@media only screen and (max-width: 653px) {
+
+    .scene
+    {
+      transform: translateX(-28%) scale(1, 1) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(40%, 100px) scale(1.6, 1.6) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(-10%, 300px) scale(0.6);
+    }
+    .SGVinny3
+    {
+          transform: translate(-15%, -300px) scale(0.6);
+    }
+    .SGVinny1
+    {
+          transform: translate(70%, 200px) scale(0.65);
+    }
+    .SGVinny2
+    {
+             transform: translate(60%, -250px) scale(0.6);
+    }
+
+    .TitleSinglishSticker
+    {
+          transform: translate(75%, 30px);
+        font-family: 'KBJellybean',serif;
+        font-size: 2em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhom
+    {
+          transform: translate(75%, 30px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+     #waImg, #teleImg, #lineImg
+    {
+      width:25%;
+      height: auto;
+     
+      z-index: 1;
+      float: none;
+       margin-right: 5%;
+       margin-bottom: 5%
+     
+    }
+    #BadgesMob
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(5%, 0px) scale(1.6, 1.6) !important;
+    }  
+
+    .TitleSinglishStickerMob
+    {
+          transform: translate(-2%, 0px);
+        font-family: 'KBJellybean',serif;
+        font-size: 1.5em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhomMob
+    {
+          transform: translate(-25%, 0px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    } 
+
+}
+
+
+@media only screen and (max-width: 605px) {
+
+    .scene
+    {
+      transform: translateX(-28%) scale(1, 1) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(35%, 100px) scale(1.6, 1.6) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(-10%, 300px) scale(0.5);
+    }
+    .SGVinny3
+    {
+          transform: translate(-15%, -350px) scale(0.5);
+    }
+    .SGVinny1
+    {
+          transform: translate(75%, 200px) scale(0.5);
+    }
+    .SGVinny2
+    {
+             transform: translate(60%, -350px) scale(0.6);
+    }
+
+    .TitleSinglishSticker
+    {
+          transform: translate(75%, -70px);
+        font-family: 'KBJellybean',serif;
+        font-size: 2em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhom
+    {
+          transform: translate(75%, -70px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+    #waImg, #teleImg, #lineImg
+    {
+      width:25%;
+      height: auto;
+     
+      z-index: 1;
+      float: none;
+       margin-right: 5%;
+       margin-bottom: 5%
+     
+    }
+        #BadgesMob
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(5%, 0px) scale(1.6, 1.6) !important;
+    }   
+
+    .TitleSinglishStickerMob
+    {
+          transform: translate(-2%, 0px);
+        font-family: 'KBJellybean',serif;
+        font-size: 1.5em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhomMob
+    {
+          transform: translate(-25%, 0px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+
+    .CNYpackTitle, .DownloadNow {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'KBJellybean',serif;
+    font-size: 2em;
+    font-weight: bolder;
+    -webkit-text-fill-color: #fb3d39;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+}
+
+@media only screen and (max-width: 578px) {
+
+    .scene
+    {
+      transform: translateX(-28%) scale(1, 1) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(35%, 100px) scale(1.6, 1.6) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(-10%, 300px) scale(0.5);
+    }
+    .SGVinny3
+    {
+          transform: translate(-15%, -350px) scale(0.5);
+    }
+    .SGVinny1
+    {
+          transform: translate(75%, 200px) scale(0.5);
+    }
+    .SGVinny2
+    {
+             transform: translate(60%, -350px) scale(0.6);
+    }
+
+    .TitleSinglishSticker
+    {
+          transform: translate(75%, -70px);
+        font-family: 'KBJellybean',serif;
+        font-size: 2em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhom
+    {
+          transform: translate(75%, -70px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+    #waImg, #teleImg, #lineImg
+    {
+      width:25%;
+      height: auto;
+     
+      z-index: 1;
+      float: none;
+       margin-right: 5%;
+       margin-bottom: 5%
+     
+    }
+      #BadgesMob
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(5%, 0px) scale(1.6, 1.6) !important;
+    }   
+
+    .TitleSinglishStickerMob
+    {
+          transform: translate(-2%, 0px);
+        font-family: 'KBJellybean',serif;
+        font-size: 1.5em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhomMob
+    {
+          transform: translate(-25%, 0px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+
+    .CNYpackTitle, .DownloadNow {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'KBJellybean',serif;
+    font-size: 1.7em;
+    font-weight: bolder;
+    -webkit-text-fill-color: #fb3d39;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+  
+}
+@media only screen and (max-width:320px) {
+
+    .scene
+    {
+      transform: translateX(-28%) scale(1, 1) !important;
+    }
+    .Badges
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(35%, 100px) scale(1.6, 1.6) !important;
+    }   
+
+    .CNYVinny1
+    {
+          transform: translate(-10%, 300px) scale(0.5);
+    }
+    .SGVinny3
+    {
+          transform: translate(-15%, -350px) scale(0.5);
+    }
+    .SGVinny1
+    {
+          transform: translate(75%, 200px) scale(0.5);
+    }
+    .SGVinny2
+    {
+             transform: translate(60%, -350px) scale(0.6);
+    }
+
+    .TitleSinglishSticker
+    {
+          transform: translate(75%, -70px);
+        font-family: 'KBJellybean',serif;
+        font-size: 1em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhom
+    {
+          transform: translate(75%, -70px);
+        font-style: italic;
+        font-size: 1em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+    #waImg, #teleImg, #lineImg
+    {
+      width:25%;
+      height: auto;
+     
+      z-index: 1;
+      float: none;
+       margin-right: 5%;
+       margin-bottom: 5%
+     
+    }
+      #BadgesMob
+    {
+      /* transform: translate3d(645px, 250px, 0px);*/
+      transform: translate(5%, 0px) scale(1.6, 1.6) !important;
+    }   
+
+    .TitleSinglishStickerMob
+    {
+          transform: translate(-2%, 0px);
+        font-family: 'KBJellybean',serif;
+        font-size: 1em;
+       color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .TitleSinglishStickerByWhomMob
+    {
+          transform: translate(-25%, 0px);
+        font-style: italic;
+        font-size: 0.8em;
+        text-align: right;
+    color: #fb3d39;
+        font-weight: bolder;
+        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-fill-color: #fb3d39;
+        
+    }
+
+
+    .CNYpackTitle, .DownloadNow {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'KBJellybean',serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    -webkit-text-fill-color: #fb3d39;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+  
+}
 
 @media (max-width: 650px) {
 
